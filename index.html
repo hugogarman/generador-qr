@@ -65,6 +65,15 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="script.js"></script>
+  <script>
+  const currentPage = window.location.pathname;
 
+  document.querySelectorAll(".nav-btn").forEach(btn => {
+    if (currentPage.includes(btn.getAttribute("href"))) {
+      btn.classList.add("active");
+    }
+  });
+  </script>
+  
 </body>
 </html>
