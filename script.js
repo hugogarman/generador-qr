@@ -1,20 +1,51 @@
-function generateQR() {
-  const inputField = document.getElementById("qr-input");
-  let input = inputField.value.trim();
+function createQR(text) {
   const qrContainer = document.getElementById("qr-result");
-
   qrContainer.innerHTML = "";
 
+  const qrDiv = document.createElement("div");
+  qrContainer.appendChild(qrDiv);
+
+  new QRCode(qrDiv, {
+    text: text,
+    width: 200,
+    height: 200
+  });
+
+  setTimeout(() => {
+    const canvas = qrDiv.querySelector("canvas");
+    if (!canvas) return;
+
+    const downloadBtn = document.createElement("button");
+    downloadBtn.textContent = "Descargar QR";
+    downloadBtn.classList.add("download-btn");
+
+    downloadBtn.onclick = () => {
+      const link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png");
+      link.download = "codigo-qr.png";
+      link.click();
+    };
+
+    qrContainer.appendChild(downloadBtn);
+  }, 100);
+}
+
+function generateQR() {
+  const inputField = document.getElementById("qr-input");
+  if (!inputField) return;
+
+  let input = inputField.value.trim();
+
   if (!input) {
-  alert("Introduce un enlace válido.");
-  return;
+    alert("Introduce un enlace válido.");
+    return;
   }
-  
+
   if (!input.includes(".")) {
     alert("El enlace no es válido.");
     return;
   }
-  
+
   if (!input.startsWith("http://") && !input.startsWith("https://")) {
     input = "https://" + input;
   }
@@ -26,9 +57,73 @@ function generateQR() {
     return;
   }
 
-  new QRCode(qrContainer, {
-    text: input,
-    width: 200,
-    height: 200
-  });
+  createQR(input);
+}
+
+function generateWhatsAppQR() {
+  const inputField = document.getElementById("phone-input");
+  if (!inputField) return;
+
+  let phone = inputField.value.trim();
+
+  if (!phone) {
+    alert("Introduce un número válido.");
+    return;
+  }
+
+  phone = phone.replace(/\s+/g, "").replace("+", "");
+
+  if (!/^\d+$/.test(phone)) {
+    alert("El número solo debe contener dígitos.");
+    return;
+  }
+
+  if (phone.length < 10) {
+    alert("Introduce el número con prefijo internacional (ej: 34600111222).");
+    return;
+  }
+
+  const whatsappLink = "https://wa.me/" + phone;
+
+  createQR(whatsappLink);
+}
+
+function generateInstagramQR() {
+  const inputField = document.getElementById("insta-input");
+  if (!inputField) return;
+
+  let username = inputField.value.trim();
+
+  if (!username) {
+    alert("Introduce un usuario válido.");
+    return;
+  }
+
+  username = username.replace("@", "");
+
+  if (!/^[a-zA-Z0-9._]+$/.test(username)) {
+    alert("El usuario contiene caracteres no válidos.");
+    return;
+  }
+
+  const instaLink = "https://instagram.com/" + username;
+
+  createQR(instaLink);
+}
+
+function generateWiFiQR() {
+  const ssidField = document.getElementById("wifi-ssid");
+  if (!ssidField) return;
+
+  const ssid = ssidField.value.trim();
+  const password = document.getElementById("wifi-password").value.trim();
+
+  if (!ssid || !password) {
+    alert("Introduce los datos WiFi.");
+    return;
+  }
+
+  const wifiString = `WIFI:T:WPA;S:${ssid};P:${password};;`;
+
+  createQR(wifiString);
 }
