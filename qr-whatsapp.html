@@ -53,39 +53,7 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script>
-  function generateWhatsAppQR() {
-    let phone = document.getElementById("phone-input").value.trim();
-    const qrContainer = document.getElementById("qr-result");
-  
-    qrContainer.innerHTML = "";
-  
-    if (!phone) {
-      alert("Introduce un número válido.");
-      return;
-    }
-  
-    phone = phone.replace(/\s+/g, "").replace("+", "");
-  
-    if (!/^\d+$/.test(phone)) {
-      alert("El número solo debe contener dígitos.");
-      return;
-    }
-  
-    if (phone.length < 10) {
-      alert("Introduce el número con prefijo internacional (ej: 34600111222).");
-      return;
-    }
-  
-    const whatsappLink = "https://wa.me/" + phone;
-  
-    new QRCode(qrContainer, {
-      text: whatsappLink,
-      width: 200,
-      height: 200
-    });
-  }
-  </script>
+  <script src="script.js"></script>
   <script>
     const currentPage = window.location.pathname;
   
