@@ -48,33 +48,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <script>
-function generateWhatsAppQR() {
-  let phone = document.getElementById("phone-input").value.trim();
+function generateInstagramQR() {
+  let username = document.getElementById("insta-input").value.trim();
   const qrContainer = document.getElementById("qr-result");
 
   qrContainer.innerHTML = "";
 
-  if (!phone) {
-    alert("Introduce un número válido.");
+  if (!username) {
+    alert("Introduce un usuario válido.");
     return;
   }
 
-  phone = phone.replace(/\s+/g, "").replace("+", "");
+  username = username.replace("@", "");
 
-  if (!/^\d+$/.test(phone)) {
-    alert("El número solo debe contener dígitos.");
+  if (!/^[a-zA-Z0-9._]+$/.test(username)) {
+    alert("El usuario contiene caracteres no válidos.");
     return;
   }
 
-  if (phone.length < 9) {
-    alert("El número parece demasiado corto.");
-    return;
-  }
-
-  const whatsappLink = "https://wa.me/" + phone;
+  const instaLink = "https://instagram.com/" + username;
 
   new QRCode(qrContainer, {
-    text: whatsappLink,
+    text: instaLink,
     width: 200,
     height: 200
   });
