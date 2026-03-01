@@ -248,3 +248,30 @@ body.bg-enlace {
 .footer a:hover {
   color: #2f6fed;
 }
+
+.legal-page {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.legal-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.legal-page h2 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.legal-page p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.legal-page strong {
+  font-weight: 600;
+}
