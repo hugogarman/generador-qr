@@ -1,11 +1,23 @@
 function generateQR() {
-  const input = document.getElementById("qr-input").value;
+  const inputField = document.getElementById("qr-input");
+  let input = inputField.value.trim();
   const qrContainer = document.getElementById("qr-result");
 
   qrContainer.innerHTML = "";
 
-  if (input.trim() === "") {
-    alert("Por favor, introduce un enlace válido.");
+  if (!input) {
+    alert("Introduce un enlace válido.");
+    return;
+  }
+
+  if (!input.startsWith("http://") && !input.startsWith("https://")) {
+    input = "https://" + input;
+  }
+
+  try {
+    new URL(input);
+  } catch {
+    alert("El enlace no es válido.");
     return;
   }
 
