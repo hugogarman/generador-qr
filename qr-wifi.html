@@ -51,14 +51,19 @@
 
 <script>
 function generateWiFiQR() {
-  const ssid = document.getElementById("wifi-ssid").value;
-  const password = document.getElementById("wifi-password").value;
+  const ssid = document.getElementById("wifi-ssid").value.trim();
+  const password = document.getElementById("wifi-password").value.trim();
   const qrContainer = document.getElementById("qr-result");
 
   qrContainer.innerHTML = "";
 
-  if (!ssid || !password) {
-    alert("Introduce los datos WiFi.");
+  if (!ssid) {
+    alert("Introduce el nombre de la red (SSID).");
+    return;
+  }
+
+  if (!password) {
+    alert("Introduce la contraseña WiFi.");
     return;
   }
 
