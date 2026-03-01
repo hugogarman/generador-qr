@@ -35,6 +35,31 @@ h1 {
   margin-bottom: 10px;
 }
 
+.legal-page {
+  text-align: left;
+}
+
+.legal-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.legal-page h2 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.legal-page p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.legal-page strong {
+  font-weight: 600;
+}
+
 .subtitle {
   font-size: 14px;
   color: #666;
