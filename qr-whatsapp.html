@@ -39,9 +39,9 @@
     <section class="info">
       <h2>¿Cómo funciona el QR para WhatsApp?</h2>
       <p>
-      Introduce tu número de WhatsApp y el generador creará un código QR con enlace directo a tu chat. 
-      Puedes escribirlo con o sin prefijo, con espacios o incluso con el símbolo +. 
-      El sistema lo adaptará automáticamente.
+      Introduce tu número de WhatsApp incluyendo el prefijo internacional.
+      Por ejemplo, para España sería 34 seguido del número.
+      El generador creará un código QR con enlace directo a tu chat.
       </p>
 
       <h2>Ideal para negocios</h2>
@@ -72,8 +72,8 @@
       return;
     }
   
-    if (phone.length < 9) {
-      alert("El número parece demasiado corto.");
+    if (phone.length < 10) {
+      alert("Introduce el número con prefijo internacional (ej: 34600111222).");
       return;
     }
   
