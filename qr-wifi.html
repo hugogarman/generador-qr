@@ -49,34 +49,7 @@
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
-<script>
-function generateWiFiQR() {
-  const ssid = document.getElementById("wifi-ssid").value.trim();
-  const password = document.getElementById("wifi-password").value.trim();
-  const qrContainer = document.getElementById("qr-result");
-
-  qrContainer.innerHTML = "";
-
-  if (!ssid) {
-    alert("Introduce el nombre de la red (SSID).");
-    return;
-  }
-
-  if (!password) {
-    alert("Introduce la contraseña WiFi.");
-    return;
-  }
-
-  const wifiString = `WIFI:T:WPA;S:${ssid};P:${password};;`;
-
-  new QRCode(qrContainer, {
-    text: wifiString,
-    width: 200,
-    height: 200
-  });
-}
-</script>
+<script src="script.js"></script>
 <script>
   const currentPage = window.location.pathname;
 
