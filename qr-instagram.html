@@ -47,35 +47,7 @@
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
-<script>
-function generateInstagramQR() {
-  let username = document.getElementById("insta-input").value.trim();
-  const qrContainer = document.getElementById("qr-result");
-
-  qrContainer.innerHTML = "";
-
-  if (!username) {
-    alert("Introduce un usuario válido.");
-    return;
-  }
-
-  username = username.replace("@", "");
-
-  if (!/^[a-zA-Z0-9._]+$/.test(username)) {
-    alert("El usuario contiene caracteres no válidos.");
-    return;
-  }
-
-  const instaLink = "https://instagram.com/" + username;
-
-  new QRCode(qrContainer, {
-    text: instaLink,
-    width: 200,
-    height: 200
-  });
-}
-</script>
+<script src="script.js"></script>
 <script>
   const currentPage = window.location.pathname;
 
