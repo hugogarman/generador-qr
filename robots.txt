@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hugogarman.github.io/generador-qr/sitemap.xml
