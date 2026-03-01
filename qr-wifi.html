@@ -71,6 +71,15 @@ function generateWiFiQR() {
   });
 }
 </script>
+<script>
+  const currentPage = window.location.pathname;
 
+  document.querySelectorAll(".nav-btn").forEach(btn => {
+    if (currentPage.includes(btn.getAttribute("href"))) {
+      btn.classList.add("active");
+    }
+  });
+</script>
+  
 </body>
 </html>
