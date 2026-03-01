@@ -69,7 +69,7 @@ function generateQR() {
     return;
   }
 
-  createQR(input);
+  createQR(input, "qr-enlace");
 }
 
 function generateWhatsAppQR() {
@@ -97,7 +97,7 @@ function generateWhatsAppQR() {
 
   const whatsappLink = "https://wa.me/" + phone;
 
-  createQR(whatsappLink);
+  createQR(whatsappLink, `qr-whatsapp-${phone}`);
 }
 
 function generateInstagramQR() {
@@ -120,7 +120,7 @@ function generateInstagramQR() {
 
   const instaLink = "https://instagram.com/" + username;
 
-  createQR(instaLink);
+  createQR(instaLink, `qr-instagram-${username}`);
 }
 
 function generateWiFiQR() {
@@ -137,5 +137,5 @@ function generateWiFiQR() {
 
   const wifiString = `WIFI:T:WPA;S:${ssid};P:${password};;`;
 
-  createQR(wifiString);
+  createQR(wifiString, `qr-wifi-${ssid}`);
 }
