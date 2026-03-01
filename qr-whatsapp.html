@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Generador de QR para WhatsApp Gratis | Crear QR WhatsApp</title>
+  
+  <meta name="description" content="Crea un código QR para tu número de WhatsApp gratis. Genera un QR para que tus clientes puedan enviarte mensajes fácilmente.">
+  
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <h1>Generador de Código QR para WhatsApp</h1>
+    <p class="subtitle">
+      Crea un código QR para tu número de WhatsApp y permite que te escriban con solo escanearlo.
+    </p>
+
+    <div class="tool-box">
+      <input type="text" id="phone-input" placeholder="Introduce tu número (ej: 34600111222)">
+      <button onclick="generateWhatsAppQR()">Generar QR WhatsApp</button>
+    </div>
+
+    <div id="qr-result"></div>
+
+    <section class="info">
+      <h2>¿Cómo funciona?</h2>
+      <p>
+        Introduce tu número de WhatsApp con prefijo internacional (sin +).
+        El generador creará un código QR con enlace directo a tu chat.
+      </p>
+
+      <h2>Ideal para negocios</h2>
+      <p>
+        Perfecto para restaurantes, tiendas, autónomos y empresas que quieran facilitar el contacto rápido con clientes.
+      </p>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    function generateWhatsAppQR() {
+      const phone = document.getElementById("phone-input").value;
+      const qrContainer = document.getElementById("qr-result");
+
+      qrContainer.innerHTML = "";
+
+      if (phone.trim() === "") {
+        alert("Introduce un número válido.");
+        return;
+      }
+
+      const whatsappLink = "https://wa.me/" + phone;
+
+      new QRCode(qrContainer, {
+        text: whatsappLink,
+        width: 200,
+        height: 200
+      });
+    }
+  </script>
+
+</body>
+</html>
