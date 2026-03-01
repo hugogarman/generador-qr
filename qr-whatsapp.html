@@ -53,25 +53,37 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script>
-    function generateWhatsAppQR() {
-      const phone = document.getElementById("phone-input").value;
-      const qrContainer = document.getElementById("qr-result");
-
-      qrContainer.innerHTML = "";
-
-      if (phone.trim() === "") {
-        alert("Introduce un número válido.");
-        return;
-      }
-
-      const whatsappLink = "https://wa.me/" + phone;
-
-      new QRCode(qrContainer, {
-        text: whatsappLink,
-        width: 200,
-        height: 200
-      });
+  function generateWhatsAppQR() {
+    let phone = document.getElementById("phone-input").value.trim();
+    const qrContainer = document.getElementById("qr-result");
+  
+    qrContainer.innerHTML = "";
+  
+    if (!phone) {
+      alert("Introduce un número válido.");
+      return;
     }
+  
+    phone = phone.replace(/\s+/g, "").replace("+", "");
+  
+    if (!/^\d+$/.test(phone)) {
+      alert("El número solo debe contener dígitos.");
+      return;
+    }
+  
+    if (phone.length < 9) {
+      alert("El número parece demasiado corto.");
+      return;
+    }
+  
+    const whatsappLink = "https://wa.me/" + phone;
+  
+    new QRCode(qrContainer, {
+      text: whatsappLink,
+      width: 200,
+      height: 200
+    });
+  }
   </script>
   <script>
     const currentPage = window.location.pathname;
