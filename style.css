@@ -121,3 +121,10 @@ button:hover {
 .nav-tools a:hover {
   text-decoration: underline;
 }
+
+.tool-box-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
