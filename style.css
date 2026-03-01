@@ -205,3 +205,21 @@ body.bg-enlace {
     align-items: center;
   }
 }
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
