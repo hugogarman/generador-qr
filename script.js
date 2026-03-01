@@ -1,9 +1,15 @@
-function createQR(text) {
+function createQR(text, filenameBase = "codigo-qr") {
   const qrContainer = document.getElementById("qr-result");
   qrContainer.innerHTML = "";
 
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("qr-wrapper");
+
   const qrDiv = document.createElement("div");
-  qrContainer.appendChild(qrDiv);
+  qrDiv.classList.add("qr-box");
+
+  wrapper.appendChild(qrDiv);
+  qrContainer.appendChild(wrapper);
 
   new QRCode(qrDiv, {
     text: text,
@@ -17,16 +23,22 @@ function createQR(text) {
 
     const downloadBtn = document.createElement("button");
     downloadBtn.textContent = "Descargar QR";
-    downloadBtn.classList.add("download-btn");
+    downloadBtn.classList.add("primary-btn");
 
     downloadBtn.onclick = () => {
       const link = document.createElement("a");
       link.href = canvas.toDataURL("image/png");
-      link.download = "codigo-qr.png";
+
+      const cleanName = filenameBase
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9\-]/g, "");
+
+      link.download = `${cleanName}.png`;
       link.click();
     };
 
-    qrContainer.appendChild(downloadBtn);
+    wrapper.appendChild(downloadBtn);
   }, 100);
 }
 
