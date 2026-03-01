@@ -144,17 +144,17 @@ button:hover {
 }
 
 body.bg-enlace {
-  background: #f4f6f8;
+  background: linear-gradient(135deg, #facc15, #f59e0b);
 }
 
 body.bg-whatsapp {
-  background: #e6f4ea;
+  background: linear-gradient(135deg, #25D366, #128C7E);
 }
 
 body.bg-wifi {
-  background: #e8f1fb;
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
 }
 
 body.bg-instagram {
-  background: #fde7f3;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
 }
