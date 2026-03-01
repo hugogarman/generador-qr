@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de QR Gratis Online</title>
+  <meta name="description" content="Genera códigos QR gratis a partir de cualquier enlace. Rápido, simple y sin registro.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Generador de Código QR Gratis</h1>
+    <p class="subtitle">Convierte cualquier enlace en un código QR al instante.</p>
+
+    <div class="tool-box">
+      <input type="text" id="qr-input" placeholder="Pega aquí tu enlace...">
+      <button onclick="generateQR()">Generar QR</button>
+    </div>
+
+    <div id="qr-result"></div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
