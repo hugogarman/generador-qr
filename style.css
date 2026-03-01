@@ -68,7 +68,6 @@ button:hover {
   margin-top: 20px;
 }
 
-/* 🔹 Responsive móvil */
 @media (max-width: 500px) {
   .container {
     padding: 25px;
@@ -103,4 +102,22 @@ button:hover {
   font-size: 14px;
   color: #444;
   line-height: 1.6;
+}
+
+.nav-tools {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-tools a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.nav-tools a:hover {
+  text-decoration: underline;
 }
