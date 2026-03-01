@@ -142,3 +142,19 @@ button:hover {
   gap: 10px;
   margin-bottom: 25px;
 }
+
+body.bg-enlace {
+  background: #f4f6f8;
+}
+
+body.bg-whatsapp {
+  background: #e6f4ea;
+}
+
+body.bg-wifi {
+  background: #e8f1fb;
+}
+
+body.bg-instagram {
+  background: #fde7f3;
+}
