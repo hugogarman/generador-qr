@@ -6,10 +6,15 @@ function generateQR() {
   qrContainer.innerHTML = "";
 
   if (!input) {
-    alert("Introduce un enlace válido.");
+  alert("Introduce un enlace válido.");
+  return;
+  }
+  
+  if (!input.includes(".")) {
+    alert("El enlace no es válido.");
     return;
   }
-
+  
   if (!input.startsWith("http://") && !input.startsWith("https://")) {
     input = "https://" + input;
   }
