@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de QR para Instagram Gratis</title>
+  <meta name="description" content="Genera un código QR para tu perfil de Instagram gratis y compártelo fácilmente.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+<nav class="nav-tools">
+  <a href="index.html">QR Enlace</a>
+  <a href="qr-whatsapp.html">QR WhatsApp</a>
+  <a href="qr-wifi.html">QR WiFi</a>
+  <a href="qr-instagram.html">QR Instagram</a>
+</nav>
+
+<h1>Generador de Código QR para Instagram</h1>
+
+<div class="tool-box">
+  <input type="text" id="insta-input" placeholder="Usuario Instagram (sin @)">
+  <button onclick="generateInstagramQR()">Generar QR Instagram</button>
+</div>
+
+<div id="qr-result"></div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+function generateInstagramQR() {
+  const username = document.getElementById("insta-input").value;
+  const qrContainer = document.getElementById("qr-result");
+
+  qrContainer.innerHTML = "";
+
+  if (!username) {
+    alert("Introduce un usuario válido.");
+    return;
+  }
+
+  const instaLink = "https://instagram.com/" + username;
+
+  new QRCode(qrContainer, {
+    text: instaLink,
+    width: 200,
+    height: 200
+  });
+}
+</script>
+
+</body>
+</html>
