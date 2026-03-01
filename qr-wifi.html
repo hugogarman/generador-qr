@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de QR para WiFi Gratis</title>
+  <meta name="description" content="Crea un código QR para tu red WiFi gratis. Permite que se conecten sin escribir la contraseña.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+<nav class="nav-tools">
+  <a href="index.html">QR Enlace</a>
+  <a href="qr-whatsapp.html">QR WhatsApp</a>
+  <a href="qr-wifi.html">QR WiFi</a>
+  <a href="qr-instagram.html">QR Instagram</a>
+</nav>
+
+<h1>Generador de Código QR para WiFi</h1>
+
+<div class="tool-box-column">
+  <input type="text" id="wifi-ssid" placeholder="Nombre de la red (SSID)">
+  <input type="text" id="wifi-password" placeholder="Contraseña">
+  <button onclick="generateWiFiQR()">Generar QR WiFi</button>
+</div>
+
+<div id="qr-result"></div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+function generateWiFiQR() {
+  const ssid = document.getElementById("wifi-ssid").value;
+  const password = document.getElementById("wifi-password").value;
+  const qrContainer = document.getElementById("qr-result");
+
+  qrContainer.innerHTML = "";
+
+  if (!ssid || !password) {
+    alert("Introduce los datos WiFi.");
+    return;
+  }
+
+  const wifiString = `WIFI:T:WPA;S:${ssid};P:${password};;`;
+
+  new QRCode(qrContainer, {
+    text: wifiString,
+    width: 200,
+    height: 200
+  });
+}
+</script>
+
+</body>
+</html>
