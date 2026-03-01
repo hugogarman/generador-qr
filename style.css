@@ -82,3 +82,25 @@ button:hover {
     width: 100%;
   }
 }
+
+.info {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.info h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info h3 {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
