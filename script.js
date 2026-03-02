@@ -168,3 +168,25 @@ function generateRestaurantQR() {
     height: 200
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdownButtons = document.querySelectorAll(".dropbtn");
+
+  dropdownButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      const dropdown = btn.closest(".dropdown");
+
+      document.querySelectorAll(".dropdown.open").forEach((d) => {
+        if (d !== dropdown) d.classList.remove("open");
+      });
+
+      dropdown.classList.toggle("open");
+    });
+  });
+
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".dropdown.open").forEach((d) => d.classList.remove("open"));
+  });
+});
