@@ -139,3 +139,32 @@ function generateWiFiQR() {
 
   createQR(wifiString, `qr-wifi-${ssid}`);
 }
+
+function generateRestaurantQR() {
+  let input = document.getElementById("restaurant-link").value.trim();
+  const qrContainer = document.getElementById("qr-result");
+
+  qrContainer.innerHTML = "";
+
+  if (!input) {
+    alert("Introduce el enlace de tu carta digital.");
+    return;
+  }
+
+  if (!input.startsWith("http://") && !input.startsWith("https://")) {
+    input = "https://" + input;
+  }
+
+  try {
+    new URL(input);
+  } catch {
+    alert("El enlace no es válido.");
+    return;
+  }
+
+  new QRCode(qrContainer, {
+    text: input,
+    width: 200,
+    height: 200
+  });
+}
