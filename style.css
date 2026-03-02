@@ -136,6 +136,17 @@ button:hover {
   line-height: 1.6;
 }
 
+.info ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.info li {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
 .nav-tools {
   display: flex;
   flex-wrap: wrap;
