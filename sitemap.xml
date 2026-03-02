@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://hugogarman.github.io/generador-qr/</loc>
+    <loc>https://qrparaempresas.com/</loc>
   </url>
+
   <url>
-    <loc>https://hugogarman.github.io/generador-qr/qr-whatsapp.html</loc>
+    <loc>https://qrparaempresas.com/qr-whatsapp.html</loc>
   </url>
+
   <url>
-    <loc>https://hugogarman.github.io/generador-qr/qr-wifi.html</loc>
+    <loc>https://qrparaempresas.com/qr-wifi.html</loc>
   </url>
+
   <url>
-    <loc>https://hugogarman.github.io/generador-qr/qr-instagram.html</loc>
+    <loc>https://qrparaempresas.com/qr-instagram.html</loc>
   </url>
+
+  <url>
+    <loc>https://qrparaempresas.com/qr-para-restaurantes.html</loc>
+  </url>
+
 </urlset>
