@@ -326,31 +326,28 @@ button:hover {
 /* LEGAL */
 /* ============================= */
 
+/* Páginas legales */
 .legal-page {
-  text-align: left;
-  max-width: 800px;
-  margin: auto;
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.7;
 }
 
 .legal-page h1 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .legal-page h2 {
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .legal-page p {
   font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-.legal-page strong {
-  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
 }
 
 /* ============================= */
