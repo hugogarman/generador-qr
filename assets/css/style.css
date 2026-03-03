@@ -117,8 +117,15 @@ h1 {
   background: #f3f6ff;
 }
 
-.dropdown.open .dropdown-content {
+/* Dropdown hover */
+.dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Quitar subrayado del botón enlace */
+.dropbtn {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .breadcrumbs {
