@@ -46,41 +46,102 @@
   </header>
   
   <main class="container">
-    
-    <h1>Generador de Código QR para WhatsApp</h1>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumbs">
+    <a href="/">Inicio</a> › 
+    <a href="#">Marketing</a> › 
+    <span>WhatsApp</span>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Código QR para WhatsApp Gratis para Empresas</h1>
     <p class="subtitle">
-      Crea un código QR para tu número de WhatsApp y permite que te escriban con solo escanearlo.
+      Genera un código QR para tu número de WhatsApp y permite que tus clientes te escriban al instante con un solo escaneo.
+      Ideal para negocios, restaurantes, tiendas y autónomos.
     </p>
-    
+  </section>
+
+  <!-- GENERADOR -->
+  <section class="generator-block">
     <div class="tool-box">
-      <input type="text" id="phone-input" placeholder="Introduce tu número (ej: 34600111222)">
-      <button onclick="generateWhatsAppQR()">Generar QR WhatsApp</button>
+      <input type="text" id="phone-input" placeholder="Introduce tu número con prefijo (ej: 34600111222)">
+      <button class="primary-btn" onclick="generateWhatsAppQR()">Generar QR WhatsApp</button>
     </div>
-    
     <div id="qr-result"></div>
-    
-    <section class="info">
-      <h2>¿Cómo funciona el QR para WhatsApp?</h2>
-      <p>
-      Introduce tu número de WhatsApp incluyendo el prefijo internacional.
+  </section>
+
+  <!-- BLOQUE SEO -->
+  <section class="info">
+
+    <h2>¿Cómo funciona el código QR para WhatsApp?</h2>
+    <p>
+      El generador crea un enlace directo a tu chat de WhatsApp utilizando el formato oficial de la plataforma.
+      Cuando un cliente escanea el código QR, se abre automáticamente la conversación sin necesidad de guardar el número.
+    </p>
+
+    <h2>Ventajas de usar un QR de WhatsApp en tu negocio</h2>
+    <ul>
+      <li>Contacto inmediato con clientes.</li>
+      <li>Facilita reservas y pedidos.</li>
+      <li>Mejora la atención al cliente.</li>
+      <li>Aumenta conversiones en tienda física.</li>
+      <li>Funciona en Android y iPhone sin apps extra.</li>
+    </ul>
+
+    <h2>Usos del QR WhatsApp para empresas</h2>
+
+    <h3>Restaurantes y bares</h3>
+    <p>
+      Combina tu carta digital con un 
+      <a href="/sectores/restaurantes/">código QR para restaurante</a> 
+      y permite reservas directas por WhatsApp.
+    </p>
+
+    <h3>Tiendas físicas</h3>
+    <p>
+      Coloca el QR en el mostrador para que los clientes consulten stock o promociones.
+    </p>
+
+    <h3>Eventos y ferias</h3>
+    <p>
+      Facilita que los asistentes contacten contigo después del evento.
+    </p>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="info">
+
+    <h2>Preguntas frecuentes sobre QR para WhatsApp</h2>
+
+    <h3>¿Es gratis crear un código QR para WhatsApp?</h3>
+    <p>
+      Sí, puedes generar tu QR de WhatsApp gratis y utilizarlo sin límites.
+    </p>
+
+    <h3>¿Qué número debo introducir?</h3>
+    <p>
+      Debes introducir tu número con prefijo internacional, sin espacios ni símbolos.
       Por ejemplo, para España sería 34 seguido del número.
-      El generador creará un código QR con enlace directo a tu chat.
-      </p>
+    </p>
 
-      <h2>Ideal para negocios</h2>
-      <p>
-        Perfecto para restaurantes, tiendas, autónomos y empresas que quieran facilitar el contacto rápido con clientes.
-      </p>
-    </section>
+    <h3>¿Funciona en todos los móviles?</h3>
+    <p>
+      Sí, el QR funciona en cualquier smartphone compatible con WhatsApp.
+    </p>
 
-    <footer class="footer">
-      <a href="/legal/privacidad/">Privacidad</a> |
-      <a href="/legal/aviso-legal/">Aviso Legal</a> |
-      <a href="/legal/cookies/">Cookies</a> |
-      <a href="/contacto/">Contacto</a>
-    </footer>
-    
-  </main>
+  </section>
+
+  <footer class="footer">
+    <a href="/legal/privacidad/">Privacidad</a> |
+    <a href="/legal/aviso-legal/">Aviso Legal</a> |
+    <a href="/legal/cookies/">Cookies</a> |
+    <a href="/contacto/">Contacto</a>
+  </footer>
+
+</main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="/assets/js/script.js"></script>
