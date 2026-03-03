@@ -129,16 +129,27 @@ h1 {
   display: inline-block;
 }
 
-.breadcrumbs {
+/* Breadcrumb wrapper */
+.breadcrumb-wrapper {
+  width: 100%;
+}
+
+/* Breadcrumb alineado igual que el container */
+.breadcrumb {
   max-width: 1000px;
-  margin: 20px auto 0;
-  font-size: 13px;
+  margin: 20px auto 0 auto;
+  padding: 0 20px;
+  font-size: 14px;
   color: #666;
 }
 
-.breadcrumbs a {
+.breadcrumb a {
   text-decoration: none;
   color: #2f6fed;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
 }
 
 /* HERO */
