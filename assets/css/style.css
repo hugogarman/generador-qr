@@ -186,26 +186,6 @@ button:hover {
   margin-bottom: 25px;
 }
 
-html.bg-whatsapp,
-body.bg-whatsapp {
-  background: linear-gradient(135deg, #25D366, #128C7E);
-}
-
-html.bg-wifi,
-body.bg-wifi {
-  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
-}
-
-html.bg-instagram,
-body.bg-instagram {
-  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
-}
-
-html.bg-enlace,
-body.bg-enlace {
-  background: linear-gradient(135deg, #facc15, #f59e0b);
-}
-
 .qr-wrapper {
   display: flex;
   align-items: center;
