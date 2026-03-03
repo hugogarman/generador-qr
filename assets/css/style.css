@@ -121,6 +121,18 @@ h1 {
   display: block;
 }
 
+.breadcrumbs {
+  max-width: 1000px;
+  margin: 20px auto 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #2f6fed;
+}
+
 /* HERO */
 .hero {
   text-align: center;
