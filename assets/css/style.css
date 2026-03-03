@@ -12,22 +12,14 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 60px 20px;
   background-attachment: fixed;
+  background-color: #f7f9fc;
 }
 
 .container {
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  text-align: center;
-  width: 100%;
-  max-width: 500px;
-  margin-top: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 20px;
 }
 
 h1 {
@@ -69,7 +61,14 @@ h1 {
 .tool-box {
   display: flex;
   gap: 10px;
-  margin-bottom: 25px;
+  margin: 25px 0;
+  justify-content: center;
+}
+
+#qr-result {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 input {
@@ -240,33 +239,6 @@ button:hover {
   color: #2f6fed;
 }
 
-.legal-page {
-  text-align: left;
-  max-width: 800px;
-  margin: auto;
-}
-
-.legal-page h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.legal-page h2 {
-  font-size: 18px;
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-.legal-page p {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-.legal-page strong {
-  font-weight: 600;
-}
-
 .main-header {
   width: 100%;
   background: white;
@@ -274,7 +246,7 @@ button:hover {
 }
 
 .header-inner {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 14px 18px;
   display: flex;
