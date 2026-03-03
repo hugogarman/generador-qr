@@ -95,14 +95,15 @@ h1 {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 44px;
-  right: 0;
+  top: 100%;
+  left: 0;
   background: #fff;
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
   border-radius: 10px;
   overflow: hidden;
   min-width: 170px;
   z-index: 9999;
+  margin-top: 6px;
 }
 
 .dropdown-content a {
