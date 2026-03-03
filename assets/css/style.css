@@ -181,25 +181,30 @@ p {
   background: #f1f5f9;
 }
 
-/* =======================================================
-   BREADCRUMB ARREGLADO
-======================================================= */
+/* ===== BREADCRUMB LIMPIO Y ALINEADO ===== */
 
 .breadcrumb-wrapper {
-  border-bottom: 1px solid var(--color-border);
-  background: var(--color-white);
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .breadcrumb {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 14px 20px;
+  max-width: 1000px;
+  margin: 20px auto 0 auto;
+  padding: 0 20px;
   font-size: 14px;
-  color: var(--color-text-light);
+  color: #6b7280;
 }
 
 .breadcrumb a {
+  text-decoration: none;
   color: var(--color-primary);
+}
+
+.breadcrumb a:hover {
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 /* =======================================================
