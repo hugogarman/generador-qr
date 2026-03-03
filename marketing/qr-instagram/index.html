@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generador de QR para Instagram Gratis</title>
-  <meta name="description" content="Genera un código QR para tu perfil de Instagram gratis y compártelo fácilmente.">
+  <title>Código QR para Instagram Gratis | Generador Online</title>
+  <meta name="description" content="Genera un código QR para tu perfil de Instagram gratis y consigue más seguidores fácilmente. Ideal para creadores, empresas y uso personal.">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -42,38 +42,99 @@
   
 <main class="container">
 
-<h1>Generador de Código QR para Instagram</h1>
-<p class="subtitle">
-  Crea un código QR para tu perfil de Instagram y compártelo fácilmente.
-</p>
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumbs">
+    <a href="/">Inicio</a> › 
+    <a href="#">Marketing</a> › 
+    <span>Instagram</span>
+  </nav>
 
-<div class="tool-box">
-  <input type="text" id="insta-input" placeholder="Usuario Instagram (ej: miusuario)">
-  <button onclick="generateInstagramQR()">Generar QR Instagram</button>
-</div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Código QR para Instagram Gratis</h1>
+    <p class="subtitle">
+      Genera un código QR para tu perfil de Instagram y permite que te sigan con un solo escaneo.
+      Ideal para creadores de contenido, empresas y uso personal.
+    </p>
+  </section>
 
-<div id="qr-result"></div>
+  <!-- GENERADOR -->
+  <section class="generator-block">
+    <div class="tool-box">
+      <input type="text" id="insta-input" placeholder="Usuario Instagram (ej: miusuario)">
+      <button class="primary-btn" onclick="generateInstagramQR()">Generar QR Instagram</button>
+    </div>
+    <div id="qr-result"></div>
+  </section>
 
-<section class="info">
-  <h2>¿Cómo funciona el QR para Instagram?</h2>
-  <p>
-    Introduce tu nombre de usuario de Instagram y genera un código QR con enlace directo a tu perfil.
-    Puedes escribirlo con o sin @. El sistema lo limpiará automáticamente.
-  </p>
+  <!-- BLOQUE SEO -->
+  <section class="info">
 
-  <h2>Perfecto para creadores y negocios</h2>
-  <p>
-    Añade el QR a tarjetas, escaparates o eventos para ganar seguidores rápidamente.
-  </p>
-</section>
+    <h2>¿Cómo funciona el código QR para Instagram?</h2>
+    <p>
+      Introduce tu nombre de usuario de Instagram y el sistema generará un enlace directo a tu perfil.
+      Cuando alguien escanee el código QR, accederá automáticamente a tu cuenta para seguirte.
+    </p>
 
-<footer class="footer">
-  <a href="/legal/privacidad/">Privacidad</a> |
-  <a href="/legal/aviso-legal/">Aviso Legal</a> |
-  <a href="/legal/cookies/">Cookies</a> |
-  <a href="/contacto/">Contacto</a>
-</footer>
-  
+    <h2>Ventajas de usar un QR de Instagram</h2>
+    <ul>
+      <li>Aumenta seguidores rápidamente.</li>
+      <li>Facilita compartir tu perfil en eventos o tiendas físicas.</li>
+      <li>No requiere aplicaciones adicionales.</li>
+      <li>Compatible con Android e iPhone.</li>
+    </ul>
+
+    <h2>Usos del QR para Instagram</h2>
+
+    <h3>Para creadores de contenido</h3>
+    <p>
+      Añade tu QR en tarjetas, presentaciones o eventos para aumentar tu comunidad.
+    </p>
+
+    <h3>Para negocios y marcas</h3>
+    <p>
+      Coloca el código QR en escaparates o packaging para dirigir tráfico a tu perfil.
+      Puedes combinarlo con un 
+      <a href="/marketing/qr-whatsapp/">QR para WhatsApp</a> 
+      para mejorar la comunicación con clientes.
+    </p>
+
+    <h3>Para uso personal</h3>
+    <p>
+      Comparte tu perfil en invitaciones, currículums o reuniones sin tener que escribir el usuario.
+    </p>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="info">
+
+    <h2>Preguntas frecuentes sobre el QR para Instagram</h2>
+
+    <h3>¿Es gratis generar un código QR para Instagram?</h3>
+    <p>
+      Sí, puedes crear tu código QR gratis y usarlo sin límites.
+    </p>
+
+    <h3>¿Puedo escribir el usuario con @?</h3>
+    <p>
+      Sí, puedes introducir el nombre con o sin el símbolo @. El sistema lo adaptará automáticamente.
+    </p>
+
+    <h3>¿Funciona en todos los dispositivos?</h3>
+    <p>
+      Sí, el código QR funciona en cualquier smartphone con cámara compatible.
+    </p>
+
+  </section>
+
+  <footer class="footer">
+    <a href="/legal/privacidad/">Privacidad</a> |
+    <a href="/legal/aviso-legal/">Aviso Legal</a> |
+    <a href="/legal/cookies/">Cookies</a> |
+    <a href="/contacto/">Contacto</a>
+  </footer>
+
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -87,6 +148,34 @@
     }
   });
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "¿Es gratis generar un código QR para Instagram?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, puedes crear tu código QR gratis y usarlo sin límites."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Puedo escribir el usuario con @?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, puedes introducir el nombre con o sin el símbolo @. El sistema lo adaptará automáticamente."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Funciona en todos los dispositivos?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, el código QR funciona en cualquier smartphone con cámara compatible."
+    }
+  }]
+}
+</script>  
   
 </body>
 </html>
