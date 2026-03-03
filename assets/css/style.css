@@ -77,10 +77,13 @@ h1 {
 /* DROPDOWN */
 /* ============================= */
 
+/* Dropdown base */
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 
+/* Botón */
 .dropbtn {
   background: #2f6fed;
   color: #fff;
@@ -90,12 +93,15 @@ h1 {
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
 }
 
+/* Menú */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%;           /* pegado al botón */
   left: 0;
   background: #fff;
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
@@ -103,9 +109,14 @@ h1 {
   overflow: hidden;
   min-width: 170px;
   z-index: 9999;
-  margin-top: 6px;
 }
 
+/* Mostrar al hacer hover en TODO el bloque */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Links internos */
 .dropdown-content a {
   display: block;
   padding: 10px 14px;
