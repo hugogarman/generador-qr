@@ -51,91 +51,106 @@
 
   <main class="container">
 
-  <h1>Soluciones QR para Empresas y Negocios</h1>
-    <p class="subtitle">
-      Genera códigos QR profesionales para restaurantes, negocios y estrategias de marketing digital.
-    </p>
-
-    <div class="tool-box">
-      <input type="text" id="qr-input" placeholder="Pega aquí tu enlace...">
-      <button onclick="generateQR()">Generar Código QR</button>
-    </div>
-
-    <div id="qr-result"></div>
-
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Códigos QR para Empresas y Negocios</h1>
+      <p class="subtitle">
+        Genera códigos QR profesionales para marketing digital, redes sociales y sectores específicos.
+      </p>
+    </section>
+  
+    <!-- GENERADOR -->
+    <section class="generator-block">
+      <div class="tool-box">
+        <input type="text" id="qr-input" placeholder="Pega aquí tu enlace...">
+        <button onclick="generateQR()">Generar Código QR</button>
+      </div>
+      <div id="qr-result"></div>
+    </section>
+  
+    <!-- MARKETING -->
+    <section class="solutions-block">
+      <h2>Herramientas de Marketing</h2>
+  
+      <div class="cards">
+        <a class="card" href="/marketing/qr-whatsapp/">
+          <h3>QR para WhatsApp</h3>
+          <p>Permite que tus clientes te escriban con un solo escaneo.</p>
+        </a>
+  
+        <a class="card" href="/marketing/qr-instagram/">
+          <h3>QR para Instagram</h3>
+          <p>Aumenta seguidores y visibilidad de tu negocio.</p>
+        </a>
+  
+        <a class="card" href="/marketing/qr-wifi/">
+          <h3>QR para WiFi</h3>
+          <p>Facilita la conexión automática a tu red.</p>
+        </a>
+      </div>
+    </section>
+  
+    <!-- SECTORES -->
+    <section class="sector-block">
+      <h2>Soluciones por Sector</h2>
+  
+      <div class="cards">
+        <a class="card" href="/sectores/restaurantes/">
+          <h3>QR para Restaurantes</h3>
+          <p>Cartas digitales, reservas y contacto rápido.</p>
+        </a>
+      </div>
+    </section>
+  
+    <!-- CONTENIDO SEO -->
     <section class="info">
+  
       <h2>¿Cómo funciona el generador de QR?</h2>
       <p>
         Introduce cualquier dirección web (por ejemplo google.com o https://tusitio.com)
         y el generador creará automáticamente un código QR válido.
         No necesitas añadir https, el sistema lo hace por ti.
       </p>
-
+  
       <h2>¿Para qué sirve un código QR?</h2>
       <p>
         Los códigos QR permiten compartir enlaces de forma rápida escaneando con el móvil.
         Son ideales para restaurantes, tarjetas de visita, redes sociales y promociones.
       </p>
-
+  
       <h2>Preguntas frecuentes</h2>
+  
       <h3>¿Es realmente gratis?</h3>
       <p>Sí, puedes generar todos los códigos QR que quieras sin coste.</p>
-
+  
       <h3>¿Necesito registrarme?</h3>
       <p>No, no necesitas crear cuenta ni dejar tus datos.</p>
-    </section>
-
-    <section class="info">
+  
       <h2>¿Qué es un código QR?</h2>
       <p>
-      Un código QR (Quick Response) es un tipo de código bidimensional que permite almacenar información como enlaces web, números de teléfono o datos de contacto.
-      Al escanearlo con la cámara del móvil, el usuario accede automáticamente al contenido asociado sin necesidad de escribir nada.
+        Un código QR (Quick Response) es un tipo de código bidimensional que permite almacenar información
+        como enlaces web, números de teléfono o datos de contacto.
+        Al escanearlo con la cámara del móvil, el usuario accede automáticamente al contenido asociado.
       </p>
-      
-      <p>
-      Los códigos QR se utilizan en restaurantes, negocios, eventos, tarjetas de visita, redes sociales y campañas de marketing digital.
-      </p>
-    </section>
-
-    <section class="info">
+  
       <h2>Ventajas de usar códigos QR para empresas</h2>
       <ul>
-      <li>Acceso rápido a información sin contacto físico.</li>
-      <li>Facilitan el marketing digital.</li>
-      <li>Permiten compartir menús digitales y catálogos.</li>
-      <li>Mejoran la experiencia del cliente.</li>
-      <li>Reducen costes en impresión.</li>
+        <li>Acceso rápido a información sin contacto físico.</li>
+        <li>Facilitan el marketing digital.</li>
+        <li>Permiten compartir menús digitales y catálogos.</li>
+        <li>Mejoran la experiencia del cliente.</li>
+        <li>Reducen costes en impresión.</li>
       </ul>
+  
     </section>
-
-    <section class="info">
-      <h2>Usos más comunes de los códigos QR</h2>
-      
-      <h3>QR para restaurantes</h3>
-      <p>
-      Permite ofrecer cartas digitales sin necesidad de imprimir menús físicos.
-      Ideal para bares, cafeterías y restaurantes.
-      </p>
-      
-      <h3>QR para redes sociales</h3>
-      <p>
-      Facilita que los clientes sigan tu Instagram o contacten por WhatsApp con un solo escaneo.
-      </p>
-      
-      <h3>QR para WiFi</h3>
-      <p>
-      Permite que los clientes se conecten automáticamente a la red sin escribir la contraseña.
-      </p>
-    
-    </section>
-
+  
     <footer class="footer">
       <a href="/legal/privacidad/">Privacidad</a> |
       <a href="/legal/aviso-legal/">Aviso Legal</a> |
       <a href="/legal/cookies/">Cookies</a> |
       <a href="/contacto/">Contacto</a>
     </footer>
-    
+  
   </main>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
