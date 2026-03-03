@@ -267,13 +267,15 @@ button:hover {
   line-height: 1.6;
 }
 
-.info ul {
+.info ul,
+.info ol {
   margin-top: 10px;
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .info li {
-  font-size: 15px;
+  font-size: 14px;
+  color: #444;
   line-height: 1.6;
   margin-bottom: 8px;
 }
