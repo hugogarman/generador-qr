@@ -184,15 +184,16 @@ p {
 /* ===== BREADCRUMB LIMPIO Y ALINEADO ===== */
 
 .breadcrumb-wrapper {
+  width: 100%;
   background: transparent;
   border: none;
-  padding: 0;
 }
 
 .breadcrumb {
   max-width: 1000px;
   margin: 20px auto 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 14px;
   color: #6b7280;
 }
