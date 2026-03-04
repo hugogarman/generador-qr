@@ -364,15 +364,15 @@ section {
 /* HERO LEGAL */
 
 .legal-page .hero {
-  padding: 50px 20px 30px;
+  padding: 40px 20px 15px;
 }
 
-/* H2 MÁS PEQUEÑOS */
+/* H2 MÁS PEQUEÑOS Y CON MENOS ESPACIO */
 
 .legal-page h2 {
-  font-size: 20px;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  font-size: 19px;
+  margin-top: 16px;
+  margin-bottom: 6px;
 }
 
 /* TEXTO */
@@ -380,16 +380,17 @@ section {
 .legal-page p {
   font-size: 16px;
   line-height: 1.6;
+  margin-bottom: 10px;
 }
 
-/* MENOS ESPACIO ENTRE BLOQUES */
+/* BLOQUES */
 
 .legal-page .info {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .legal-page .info:first-of-type {
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 /* =======================================================
