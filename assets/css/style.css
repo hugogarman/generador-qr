@@ -354,43 +354,43 @@ section {
   color: var(--color-primary);
 }
 
-/* PÁGINAS LEGALES */
+/* CONTENEDOR */
 
-.legal-page {
+main.legal-page {
   max-width: 820px;
   margin: 0 auto;
 }
 
-/* HERO LEGAL */
+/* HERO */
 
-.legal-page .hero {
-  padding: 40px 20px 15px;
+main.legal-page .hero {
+  padding: 30px 20px 10px;
 }
 
-/* H2 MÁS PEQUEÑOS Y CON MENOS ESPACIO */
+/* SECCIONES */
 
-.legal-page h2 {
+main.legal-page section.info {
+  margin-top: 10px;
+}
+
+main.legal-page section.info:first-of-type {
+  margin-top: 6px;
+}
+
+/* TITULOS */
+
+main.legal-page section.info h2 {
   font-size: 19px;
-  margin-top: 16px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
 /* TEXTO */
 
-.legal-page p {
+main.legal-page section.info p {
   font-size: 16px;
+  margin-bottom: 6px;
   line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-/* BLOQUES */
-
-.legal-page .info {
-  margin-top: 14px;
-}
-
-.legal-page .info:first-of-type {
-  margin-top: 8px;
 }
 
 /* =======================================================
