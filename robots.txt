@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hugogarman.github.io/generador-qr/sitemap.xml
+Sitemap: https://qrparaempresas.com/sitemap.xml
