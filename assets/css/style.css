@@ -385,11 +385,11 @@ section {
 /* MENOS ESPACIO ENTRE BLOQUES */
 
 .legal-page .info {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .legal-page .info:first-of-type {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /* =======================================================
