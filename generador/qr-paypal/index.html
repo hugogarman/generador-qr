@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-enlace">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Generador de Código QR para PayPal | Recibir Pagos con QR</title>
+
+	<meta name="description" content="Crea un código QR para PayPal y permite que clientes o seguidores te envíen pagos escaneando el código. Generador QR para PayPal ideal para negocios, freelancers, donaciones y eventos.">
+
+	<meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="bg-enlace">
+
+<header class="main-header">
+	<div class="header-inner">
+
+		<div class="logo">
+			<a href="/">QRParaEmpresas</a>
+		</div>
+
+		<nav class="nav-menu">
+
+			<div class="dropdown">
+				<a href="/sectores/" class="dropbtn">Sectores ▾</a>
+				<div class="dropdown-content">
+					<a href="/sectores/restaurantes/">Restaurantes</a>
+					<a href="/sectores/hoteles/">Hoteles</a>
+					<a href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
+					<a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+					<a href="/sectores/gimnasios/">Gimnasios</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<a href="/generador/" class="dropbtn">Generadores QR ▾</a>
+				<div class="dropdown-content">
+					<a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+					<a href="/generador/qr-instagram/">QR Instagram</a>
+					<a href="/generador/qr-wifi/">QR WiFi</a>
+					<a href="/generador/qr-google-maps/">QR Google Maps</a>
+					<a href="/generador/qr-gmail/">QR Gmail</a>
+					<a href="/generador/qr-telefono/">QR Teléfono</a>
+					<a href="/generador/qr-youtube/">QR YouTube</a>
+					<a href="/generador/qr-pdf/">QR PDF</a>
+					<a href="/generador/qr-google-reviews/">QR Google Reviews</a>
+					<a href="/generador/qr-enlace/">QR Enlace</a>
+					<a href="/generador/qr-vcard/">QR vCard</a>
+					<a href="/generador/qr-google-forms/">QR Google Forms</a>
+					<a href="/generador/qr-telegram/">QR Telegram</a>
+					<a href="/generador/qr-linkedin/">QR LinkedIn</a>
+					<a href="/generador/qr-app-store/">QR App Store</a>
+					<a href="/generador/qr-google-play/">QR Google Play</a>
+					<a href="/generador/qr-tiktok/">QR TikTok</a>
+					<a href="/generador/qr-evento/">QR Evento</a>
+					<a href="/generador/qr-spotify/">QR Spotify</a>
+					<a href="/generador/qr-paypal/">QR PayPal</a>
+				</div>
+			</div>
+
+			<a href="/contacto/" class="nav-link">Contacto</a>
+
+		</nav>
+
+	</div>
+</header>
+
+<div class="breadcrumb-wrapper">
+	<div class="breadcrumb">
+		<a href="/">Inicio</a> ›
+		<a href="/generador/">Generadores</a> ›
+		QR PayPal
+	</div>
+</div>
+
+<main class="container">
+
+<section class="hero">
+
+	<h1>Generador de Código QR para PayPal</h1>
+
+	<p class="subtitle">
+		Crea un código QR para PayPal y permite que cualquier persona
+		te envíe dinero escaneando el código con su móvil. Ideal para
+		negocios, freelancers, donaciones o pagos rápidos.
+	</p>
+
+</section>
+
+<section class="generator-block">
+
+	<div class="tool-box">
+		<input type="text" id="qr-input" placeholder="Pega tu enlace PayPal (ej: https://paypal.me/usuario)">
+		<button class="primary-btn" onclick="generateQR()">Generar QR PayPal</button>
+	</div>
+
+	<div id="qr-result"></div>
+
+</section>
+
+<section class="info">
+
+	<h2>¿Qué es un código QR para PayPal?</h2>
+
+	<p>
+	Un código QR para PayPal es un código escaneable que dirige
+	directamente a una página de pago dentro de PayPal. Cuando una
+	persona escanea el código QR con su smartphone, se abre
+	automáticamente el enlace donde puede enviar dinero al usuario
+	o negocio que recibe el pago.
+	</p>
+
+	<p>
+	Este sistema permite recibir pagos de forma rápida y sencilla
+	sin necesidad de introducir manualmente el usuario de PayPal
+	o copiar enlaces de pago.
+	</p>
+
+	<p>
+	Los códigos QR de PayPal se utilizan cada vez más en pequeños
+	comercios, freelancers, eventos y proyectos digitales que
+	quieren facilitar pagos desde el móvil.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Para qué sirve un QR de PayPal</h2>
+
+	<p>
+	Un código QR de PayPal permite enviar dinero de forma rápida
+	escaneando el código con la cámara del móvil.
+	</p>
+
+	<p>
+	En lugar de escribir el usuario o buscar el enlace de pago,
+	el cliente puede escanear el código y acceder directamente
+	a la página donde realizar el pago.
+	</p>
+
+	<p>
+	Esto reduce errores y hace que el proceso sea mucho más rápido,
+	especialmente en situaciones donde se necesitan pagos
+	inmediatos.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Usos del código QR de PayPal</h2>
+
+	<h3>Pagos en pequeños negocios</h3>
+
+	<p>
+	Muchos comercios utilizan códigos QR de PayPal para aceptar
+	pagos rápidos sin necesidad de terminales de tarjeta.
+	</p>
+
+	<h3>Freelancers y profesionales</h3>
+
+	<p>
+	Diseñadores, desarrolladores o consultores pueden cobrar
+	a clientes fácilmente utilizando un QR de PayPal.
+	</p>
+
+	<h3>Donaciones y apoyo a proyectos</h3>
+
+	<p>
+	Creadores de contenido o proyectos online utilizan códigos
+	QR para recibir donaciones de su comunidad.
+	</p>
+
+	<h3>Eventos y ferias</h3>
+
+	<p>
+	En eventos o mercados es habitual utilizar códigos QR
+	para recibir pagos rápidos desde el móvil.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Ventajas de usar códigos QR para PayPal</h2>
+
+	<ul>
+		<li>Permite recibir pagos con un solo escaneo.</li>
+		<li>No es necesario escribir enlaces.</li>
+		<li>Reduce errores al introducir usuarios.</li>
+		<li>Ideal para pagos rápidos en persona.</li>
+		<li>Compatible con la mayoría de smartphones.</li>
+		<li>Puede imprimirse en carteles o tarjetas.</li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Cómo crear un código QR para PayPal</h2>
+
+	<ol>
+		<li>Obtén tu enlace de pago de PayPal.</li>
+		<li>Pega el enlace en el generador.</li>
+		<li>Genera el código QR.</li>
+		<li>Descarga la imagen.</li>
+		<li>Utiliza el QR en tu negocio o proyecto.</li>
+	</ol>
+
+</section>
+
+<section class="info">
+
+	<h2>Otros generadores de códigos QR</h2>
+
+	<ul>
+		<li><a href="/generador/qr-whatsapp/">QR WhatsApp</a></li>
+		<li><a href="/generador/qr-google-reviews/">QR Google Reviews</a></li>
+		<li><a href="/generador/qr-enlace/">QR Enlace</a></li>
+		<li><a href="/generador/qr-spotify/">QR Spotify</a></li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Preguntas frecuentes sobre QR PayPal</h2>
+
+	<h3>¿Para qué sirve un QR de PayPal?</h3>
+
+	<p>
+	Permite recibir pagos escaneando el código QR con un smartphone.
+	</p>
+
+	<h3>¿Es gratis crear un QR para PayPal?</h3>
+
+	<p>
+	Sí, puedes generar códigos QR para enlaces de PayPal de forma gratuita.
+	</p>
+
+	<h3>¿Funciona en cualquier móvil?</h3>
+
+	<p>
+	La mayoría de smartphones pueden escanear códigos QR
+	desde la cámara.
+	</p>
+
+	<h3>¿Se puede imprimir el código QR?</h3>
+
+	<p>
+	Sí, puedes imprimir el QR en carteles o material promocional.
+	</p>
+
+</section>
+
+<footer class="footer">
+	<a href="/legal/privacidad/">Privacidad</a> |
+	<a href="/legal/aviso-legal/">Aviso Legal</a> |
+	<a href="/legal/cookies/">Cookies</a> |
+	<a href="/contacto/">Contacto</a>
+</footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="/assets/js/script.js"></script>
+
+<script type="application/ld+json">
+{
+	"@context":"https://schema.org",
+	"@type":"FAQPage",
+	"mainEntity":[{
+		"@type":"Question",
+		"name":"¿Para qué sirve un QR de PayPal?",
+		"acceptedAnswer":{
+			"@type":"Answer",
+			"text":"Permite recibir pagos escaneando el código QR con un smartphone."
+		}
+	},{
+		"@type":"Question",
+		"name":"¿Es gratis crear un QR para PayPal?",
+		"acceptedAnswer":{
+			"@type":"Answer",
+			"text":"Sí, puedes crear códigos QR para PayPal gratuitamente."
+		}
+	},{
+		"@type":"Question",
+		"name":"¿Funciona en cualquier móvil?",
+		"acceptedAnswer":{
+			"@type":"Answer",
+			"text":"La mayoría de smartphones actuales pueden escanear códigos QR."
+		}
+	},{
+		"@type":"Question",
+		"name":"¿Se puede imprimir el código QR?",
+		"acceptedAnswer":{
+			"@type":"Answer",
+			"text":"Sí, los códigos QR pueden imprimirse en carteles o tarjetas."
+		}
+	}]
+}
+</script>
+
+</body>
+</html>
