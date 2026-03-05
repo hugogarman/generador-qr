@@ -190,3 +190,25 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".dropdown.open").forEach((d) => d.classList.remove("open"));
   });
 });
+
+
+function generarQRMaps() {
+
+    const enlace = document.getElementById("maps-link").value.trim();
+    const contenedor = document.getElementById("qr-result");
+
+    contenedor.innerHTML = "";
+
+    if (!enlace) {
+        alert("Introduce un enlace de Google Maps");
+        return;
+    }
+
+    new QRCode(contenedor, {
+        text: enlace,
+        width: 220,
+        height: 220,
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+}
