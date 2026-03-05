@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-enlace">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Generador de Código QR para Google Forms | Formularios y Encuestas</title>
+
+	<meta name="description" content="Crea un código QR para Google Forms y permite que usuarios accedan a tus formularios o encuestas escaneando un QR. Ideal para eventos, negocios, educación y estudios de mercado.">
+
+	<meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="bg-enlace">
+
+<header class="main-header">
+	<div class="header-inner">
+
+		<div class="logo">
+			<a href="/">QRParaEmpresas</a>
+		</div>
+
+		<nav class="nav-menu">
+
+			<div class="dropdown">
+				<a href="/sectores/" class="dropbtn">Sectores ▾</a>
+				<div class="dropdown-content">
+					<a href="/sectores/restaurantes/">Restaurantes</a>
+					<a href="/sectores/hoteles/">Hoteles</a>
+					<a href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
+					<a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+					<a href="/sectores/gimnasios/">Gimnasios</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<a href="/generador/" class="dropbtn">Generadores QR ▾</a>
+				<div class="dropdown-content">
+					<a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+					<a href="/generador/qr-instagram/">QR Instagram</a>
+					<a href="/generador/qr-wifi/">QR WiFi</a>
+					<a href="/generador/qr-google-maps/">QR Google Maps</a>
+					<a href="/generador/qr-gmail/">QR Gmail</a>
+					<a href="/generador/qr-telefono/">QR Teléfono</a>
+					<a href="/generador/qr-youtube/">QR YouTube</a>
+					<a href="/generador/qr-pdf/">QR PDF</a>
+					<a href="/generador/qr-google-reviews/">QR Google Reviews</a>
+					<a href="/generador/qr-enlace/">QR Enlace</a>
+					<a href="/generador/qr-vcard/">QR vCard</a>
+					<a href="/generador/qr-google-forms/">QR Google Forms</a>
+				</div>
+			</div>
+
+			<a href="/contacto/" class="nav-link">Contacto</a>
+
+		</nav>
+	</div>
+</header>
+
+<div class="breadcrumb-wrapper">
+	<div class="breadcrumb">
+		<a href="/">Inicio</a> ›
+		<a href="/generador/">Generadores</a> ›
+		QR Google Forms
+	</div>
+</div>
+
+<main class="container">
+
+<section class="hero">
+
+	<h1>Generador de Código QR para Google Forms</h1>
+
+	<p class="subtitle">
+		Crea un código QR para compartir formularios o encuestas de Google Forms. 
+		Permite que usuarios respondan cuestionarios, registros o encuestas 
+		escaneando un simple código QR desde su móvil.
+	</p>
+
+</section>
+
+<section class="generator-block">
+
+	<div class="tool-box">
+
+		<input type="text" id="forms-link" placeholder="Pega aquí el enlace de Google Forms">
+
+		<button class="primary-btn" onclick="generateQR()">
+			Generar QR Google Forms
+		</button>
+
+	</div>
+
+	<div id="qr-result"></div>
+
+</section>
+
+<section class="info">
+
+	<h2>¿Qué es un código QR para Google Forms?</h2>
+
+	<p>
+		Un código QR para Google Forms permite compartir formularios online mediante un escaneo
+		con el teléfono móvil. Cuando un usuario escanea el código QR, se abre automáticamente
+		el formulario en el navegador del móvil, permitiendo completar la encuesta o registro.
+	</p>
+
+	<p>
+		Google Forms es una herramienta muy utilizada para crear encuestas, formularios de
+		registro, cuestionarios educativos o recopilación de datos. Al combinar esta herramienta
+		con códigos QR, el acceso al formulario se vuelve mucho más rápido y sencillo.
+	</p>
+
+	<p>
+		En lugar de escribir un enlace largo o buscar el formulario manualmente, el usuario
+		solo tiene que escanear el QR para acceder directamente al cuestionario.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Para qué sirve un QR de Google Forms</h2>
+
+	<p>
+		Los códigos QR de Google Forms se utilizan principalmente para facilitar la participación
+		en encuestas o formularios. Esto resulta especialmente útil cuando el formulario se
+		comparte en espacios físicos como eventos, tiendas, restaurantes o aulas.
+	</p>
+
+	<p>
+		En muchos casos, pedir a los usuarios que escriban un enlace largo es poco práctico.
+		El código QR permite acceder al formulario en segundos, lo que aumenta considerablemente
+		el número de respuestas.
+	</p>
+
+	<p>
+		Este tipo de QR es especialmente útil para estudios de mercado, encuestas de satisfacción
+		del cliente o registros en eventos.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Usos del QR para formularios de Google</h2>
+
+	<h3>Encuestas de satisfacción</h3>
+
+	<p>
+		Muchos negocios utilizan formularios de Google Forms para recoger opiniones de clientes.
+		Colocar un código QR en el establecimiento permite que los clientes respondan
+		la encuesta rápidamente desde su móvil.
+	</p>
+
+	<h3>Eventos y conferencias</h3>
+
+	<p>
+		En eventos profesionales, los códigos QR pueden utilizarse para registrar asistentes,
+		recoger feedback o permitir que los participantes accedan a cuestionarios o formularios.
+	</p>
+
+	<h3>Educación y formación</h3>
+
+	<p>
+		Los profesores utilizan Google Forms para crear cuestionarios o ejercicios.
+		Un código QR permite que los alumnos accedan al formulario sin necesidad
+		de escribir direcciones web largas.
+	</p>
+
+	<h3>Registros y solicitudes</h3>
+
+	<p>
+		Empresas y organizaciones también utilizan formularios para gestionar
+		registros, inscripciones o solicitudes. El QR facilita el acceso inmediato
+		al formulario desde cualquier lugar.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Ventajas de usar códigos QR en Google Forms</h2>
+
+	<ul>
+		<li>Acceso rápido al formulario desde cualquier móvil.</li>
+		<li>Aumenta la participación en encuestas.</li>
+		<li>Evita escribir enlaces largos manualmente.</li>
+		<li>Puede imprimirse en carteles, folletos o tarjetas.</li>
+		<li>Compatible con la mayoría de smartphones.</li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Cómo crear un QR para Google Forms</h2>
+
+	<ol>
+		<li>Crea tu formulario en Google Forms.</li>
+		<li>Copia el enlace del formulario.</li>
+		<li>Pégalo en el generador de esta página.</li>
+		<li>Genera el código QR.</li>
+		<li>Descarga el QR para utilizarlo donde lo necesites.</li>
+	</ol>
+
+</section>
+
+<section class="info">
+
+	<h2>Otros generadores de códigos QR</h2>
+
+	<p>
+		Además de formularios, puedes crear códigos QR para muchas otras herramientas
+		de marketing digital y comunicación empresarial.
+	</p>
+
+	<ul>
+		<li><a href="/generador/qr-whatsapp/">QR para WhatsApp</a></li>
+		<li><a href="/generador/qr-google-reviews/">QR para Google Reviews</a></li>
+		<li><a href="/generador/qr-vcard/">QR para contacto vCard</a></li>
+		<li><a href="/generador/qr-enlace/">QR para enlaces web</a></li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Preguntas frecuentes sobre QR Google Forms</h2>
+
+	<h3>¿Para qué sirve un QR de Google Forms?</h3>
+	<p>
+		Permite abrir un formulario o encuesta de Google Forms escaneando un código QR.
+	</p>
+
+	<h3>¿Es gratis generar un QR para formularios?</h3>
+	<p>
+		Sí, puedes crear códigos QR para formularios de Google Forms de forma gratuita.
+	</p>
+
+	<h3>¿Funciona en cualquier móvil?</h3>
+	<p>
+		La mayoría de smartphones actuales pueden escanear códigos QR directamente
+		desde la cámara.
+	</p>
+
+	<h3>¿Se puede imprimir el código QR?</h3>
+	<p>
+		Sí, puedes imprimir el QR en carteles, folletos o material promocional.
+	</p>
+
+</section>
+
+<footer class="footer">
+	<a href="/legal/privacidad/">Privacidad</a> |
+	<a href="/legal/aviso-legal/">Aviso Legal</a> |
+	<a href="/legal/cookies/">Cookies</a> |
+	<a href="/contacto/">Contacto</a>
+</footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="/assets/js/script.js"></script>
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [{
+		"@type": "Question",
+		"name": "¿Para qué sirve un QR de Google Forms?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Permite abrir un formulario de Google Forms escaneando un código QR desde el móvil."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Es gratis generar un QR para Google Forms?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Sí, puedes crear códigos QR para formularios de Google Forms de forma gratuita."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Funciona en cualquier móvil?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "La mayoría de smartphones actuales pueden escanear códigos QR directamente desde la cámara."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Se puede imprimir el código QR?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Sí, puedes imprimir el código QR en carteles, folletos o material promocional."
+		}
+	}]
+}
+</script>
+
+</body>
+</html>
