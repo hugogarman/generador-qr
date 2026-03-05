@@ -369,45 +369,30 @@ END:VCALENDAR`;
 }
 
 // ============================
-// QR EVENTO / ENTRADA EVENTO
+// QR ENTRADA EVENTO (TICKET)
 // ============================
 
-function generateEventQR() {
+function generateTicketQR() {
 
-	const titleField = document.getElementById("event-title");
-	const dateField = document.getElementById("event-date");
-	const locationField = document.getElementById("event-location");
+	const nameField = document.getElementById("ticket-name");
+	const eventField = document.getElementById("ticket-event");
 
-	if (!titleField || !dateField) return;
+	if (!nameField || !eventField) return;
 
-	const title = titleField.value.trim();
-	const date = dateField.value.trim();
-	const location = locationField.value.trim();
+	const name = nameField.value.trim();
+	const event = eventField.value.trim();
 
-	if (!title || !date) {
-		alert("Introduce al menos el nombre y fecha del evento.");
+	if (!name || !event) {
+		alert("Introduce el nombre del asistente y el evento.");
 		return;
 	}
 
-	const startDate = new Date(date);
+	const randomCode = Math.random().toString(36).substring(2,10).toUpperCase();
 
-	const formatDate = (d) => {
-		return d.toISOString().replace(/[-:]/g,"").split(".")[0] + "Z";
-	};
+	const ticketPayload = `EVENT:${event}|NAME:${name}|CODE:${randomCode}`;
 
-	const eventPayload =
-`BEGIN:VCALENDAR
-VERSION:2.0
-BEGIN:VEVENT
-SUMMARY:${title}
-DTSTART:${formatDate(startDate)}
-LOCATION:${location}
-END:VEVENT
-END:VCALENDAR`;
-
-	createQR(eventPayload, `qr-evento-${title}`);
+	createQR(ticketPayload, `ticket-${event}-${randomCode}`);
 }
-
 // ============================
 // QR TWITTER
 // ============================
