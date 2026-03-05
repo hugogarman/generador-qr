@@ -273,6 +273,33 @@ END:VCARD`;
 
 }
 
+/* =========================
+   GENERAR QR LINKEDIN
+========================= */
+
+function generateLinkedinQR() {
+
+	const inputField = document.getElementById("linkedin-input");
+
+	if (!inputField) return;
+
+	let username = inputField.value.trim();
+
+	if (!username) {
+		alert("Introduce tu usuario de LinkedIn.");
+		return;
+	}
+
+	username = username.replace("https://www.linkedin.com/in/", "");
+	username = username.replace("linkedin.com/in/", "");
+	username = username.replace("/", "");
+
+	const linkedinLink = "https://www.linkedin.com/in/" + username;
+
+	createQR(linkedinLink, `qr-linkedin-${username}`);
+
+}
+
 /* =====================================================
    MENÚ DESPLEGABLE DEL HEADER
    Controla apertura y cierre de dropdowns
