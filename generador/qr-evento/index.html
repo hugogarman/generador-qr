@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-enlace">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Generador de Código QR para Eventos | Añadir Evento al Calendario</title>
+
+	<meta name="description" content="Crea un código QR para eventos y permite que los asistentes añadan la fecha directamente a su calendario. Genera QR para conferencias, reuniones, talleres, bodas o eventos corporativos.">
+
+	<meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="bg-enlace">
+
+<header class="main-header">
+	<div class="header-inner">
+
+		<div class="logo">
+			<a href="/">QRParaEmpresas</a>
+		</div>
+
+		<nav class="nav-menu">
+
+			<div class="dropdown">
+				<a href="/sectores/" class="dropbtn">Sectores ▾</a>
+				<div class="dropdown-content">
+					<a href="/sectores/restaurantes/">Restaurantes</a>
+					<a href="/sectores/hoteles/">Hoteles</a>
+					<a href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
+					<a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+					<a href="/sectores/gimnasios/">Gimnasios</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<a href="/generador/" class="dropbtn">Generadores QR ▾</a>
+				<div class="dropdown-content">
+					<a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+					<a href="/generador/qr-instagram/">QR Instagram</a>
+					<a href="/generador/qr-wifi/">QR WiFi</a>
+					<a href="/generador/qr-google-maps/">QR Google Maps</a>
+					<a href="/generador/qr-gmail/">QR Gmail</a>
+					<a href="/generador/qr-telefono/">QR Teléfono</a>
+					<a href="/generador/qr-youtube/">QR YouTube</a>
+					<a href="/generador/qr-pdf/">QR PDF</a>
+					<a href="/generador/qr-google-reviews/">QR Google Reviews</a>
+					<a href="/generador/qr-enlace/">QR Enlace</a>
+					<a href="/generador/qr-vcard/">QR vCard</a>
+					<a href="/generador/qr-google-forms/">QR Google Forms</a>
+					<a href="/generador/qr-telegram/">QR Telegram</a>
+					<a href="/generador/qr-linkedin/">QR LinkedIn</a>
+					<a href="/generador/qr-app-store/">QR App Store</a>
+					<a href="/generador/qr-google-play/">QR Google Play</a>
+					<a href="/generador/qr-tiktok/">QR TikTok</a>
+					<a href="/generador/qr-evento/">QR Evento</a>
+				</div>
+			</div>
+
+			<a href="/contacto/" class="nav-link">Contacto</a>
+
+		</nav>
+
+	</div>
+</header>
+
+<div class="breadcrumb-wrapper">
+	<div class="breadcrumb">
+		<a href="/">Inicio</a> ›
+		<a href="/generador/">Generadores</a> ›
+		QR Evento
+	</div>
+</div>
+
+<main class="container">
+
+<section class="hero">
+
+	<h1>Generador de Código QR para Eventos</h1>
+
+	<p class="subtitle">
+		Crea un código QR para eventos y permite que los asistentes añadan la fecha
+		directamente a su calendario escaneando el código con su smartphone.
+	</p>
+
+</section>
+
+<section class="generator-block">
+
+	<div class="tool-box">
+
+		<input type="text" id="event-title" placeholder="Nombre del evento">
+
+		<input type="text" id="event-location" placeholder="Ubicación del evento">
+
+		<input type="datetime-local" id="event-start">
+
+		<input type="datetime-local" id="event-end">
+
+		<button class="primary-btn" onclick="generateEventQR()">
+			Generar QR Evento
+		</button>
+
+	</div>
+
+	<div id="qr-result"></div>
+
+</section>
+
+<section class="info">
+
+	<h2>¿Qué es un código QR para eventos?</h2>
+
+	<p>
+		Un código QR para eventos es un código escaneable que contiene la información
+		de una cita o actividad. Cuando una persona escanea el QR con su móvil,
+		el teléfono puede añadir automáticamente el evento al calendario del usuario.
+	</p>
+
+	<p>
+		Este tipo de código QR se utiliza cada vez más en congresos, conferencias,
+		talleres, reuniones empresariales, bodas, cursos y eventos culturales.
+		Permite compartir la información de forma rápida sin que los asistentes
+		tengan que escribir manualmente la fecha o la ubicación.
+	</p>
+
+	<p>
+		Gracias a esta tecnología, los organizadores de eventos pueden mejorar la
+		experiencia de los asistentes y facilitar que las personas recuerden la cita
+		en su calendario digital.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Para qué sirve un QR de evento</h2>
+
+	<p>
+		Los códigos QR de eventos permiten distribuir la información de una reunión
+		o actividad de forma sencilla. En lugar de enviar mensajes largos o
+		instrucciones complicadas, basta con escanear el QR para guardar la cita.
+	</p>
+
+	<p>
+		Este sistema es especialmente útil cuando hay muchos asistentes o cuando
+		el evento se promociona mediante carteles, flyers o páginas web.
+	</p>
+
+	<p>
+		Además, los códigos QR permiten reducir errores al introducir fechas,
+		horarios o ubicaciones manualmente, lo que mejora la organización
+		del evento.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Usos del código QR para eventos</h2>
+
+	<h3>Conferencias y congresos</h3>
+
+	<p>
+		En eventos profesionales es habitual utilizar códigos QR para que
+		los asistentes añadan las sesiones o charlas directamente
+		a su calendario.
+	</p>
+
+	<h3>Eventos corporativos</h3>
+
+	<p>
+		Las empresas pueden utilizar códigos QR para reuniones,
+		presentaciones o actividades internas.
+	</p>
+
+	<h3>Bodas y celebraciones</h3>
+
+	<p>
+		Las invitaciones modernas incluyen códigos QR que permiten
+		a los invitados guardar la fecha del evento en su calendario.
+	</p>
+
+	<h3>Talleres y cursos</h3>
+
+	<p>
+		En formaciones o workshops, un QR permite a los alumnos
+		recordar fácilmente la fecha y hora de la sesión.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Ventajas de usar códigos QR para eventos</h2>
+
+	<ul>
+		<li>Permite guardar el evento en el calendario en segundos.</li>
+		<li>Reduce errores al escribir fechas o direcciones.</li>
+		<li>Ideal para carteles, invitaciones o páginas web.</li>
+		<li>Compatible con la mayoría de smartphones.</li>
+		<li>Mejora la experiencia de los asistentes.</li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Cómo crear un código QR para un evento</h2>
+
+	<ol>
+		<li>Introduce el nombre del evento.</li>
+		<li>Indica la ubicación y la fecha.</li>
+		<li>Genera el código QR.</li>
+		<li>Descarga el QR y compártelo con los asistentes.</li>
+	</ol>
+
+	<p>
+		Puedes utilizar el QR en invitaciones, páginas web,
+		correos electrónicos o material promocional.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Otros generadores de códigos QR</h2>
+
+	<p>
+		Además del QR de eventos, puedes crear códigos QR para muchas
+		otras herramientas digitales y necesidades empresariales.
+	</p>
+
+	<ul>
+		<li><a href="/generador/qr-whatsapp/">QR para WhatsApp</a></li>
+		<li><a href="/generador/qr-google-maps/">QR para Google Maps</a></li>
+		<li><a href="/generador/qr-enlace/">QR para enlaces web</a></li>
+		<li><a href="/generador/qr-google-forms/">QR para Google Forms</a></li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Preguntas frecuentes sobre QR para eventos</h2>
+
+	<h3>¿Para qué sirve un QR de evento?</h3>
+	<p>
+		Permite añadir una cita o actividad al calendario escaneando el código QR.
+	</p>
+
+	<h3>¿Es gratis crear un QR para eventos?</h3>
+	<p>
+		Sí, puedes generar códigos QR para eventos de forma gratuita.
+	</p>
+
+	<h3>¿Funciona en cualquier móvil?</h3>
+	<p>
+		La mayoría de smartphones actuales pueden escanear códigos QR
+		desde la cámara.
+	</p>
+
+	<h3>¿Se puede imprimir el QR?</h3>
+	<p>
+		Sí, puedes imprimir el QR en invitaciones, carteles o material promocional.
+	</p>
+
+</section>
+
+<footer class="footer">
+	<a href="/legal/privacidad/">Privacidad</a> |
+	<a href="/legal/aviso-legal/">Aviso Legal</a> |
+	<a href="/legal/cookies/">Cookies</a> |
+	<a href="/contacto/">Contacto</a>
+</footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="/assets/js/script.js"></script>
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [{
+		"@type": "Question",
+		"name": "¿Para qué sirve un QR de evento?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Permite añadir un evento al calendario escaneando el código QR."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Es gratis crear un QR para eventos?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Sí, puedes crear códigos QR para eventos de forma gratuita."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Funciona en cualquier móvil?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "La mayoría de smartphones pueden escanear códigos QR con la cámara."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Se puede imprimir el código QR?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Sí, los códigos QR pueden imprimirse en invitaciones, carteles o material promocional."
+		}
+	}]
+}
+</script>
+
+</body>
+</html>
