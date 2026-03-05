@@ -368,6 +368,34 @@ END:VCALENDAR`;
 	createQR(eventData, "qr-evento");
 }
 
+// ============================
+// QR TWITTER
+// ============================
+
+function generateTwitterQR() {
+
+	const inputField = document.getElementById("twitter-input");
+	if (!inputField) return;
+
+	let username = inputField.value.trim();
+
+	if (!username) {
+		alert("Introduce un usuario de Twitter.");
+		return;
+	}
+
+	username = username.replace("@", "");
+
+	if (!/^[a-zA-Z0-9_]+$/.test(username)) {
+		alert("El usuario contiene caracteres no válidos.");
+		return;
+	}
+
+	const twitterLink = "https://twitter.com/" + username;
+
+	createQR(twitterLink, `qr-twitter-${username}`);
+}
+
 /* =====================================================
    MENÚ DESPLEGABLE DEL HEADER
    Controla apertura y cierre de dropdowns
