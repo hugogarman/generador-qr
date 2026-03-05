@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-enlace">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Generador de Código QR para Perfil de LinkedIn | Networking Profesional</title>
+
+	<meta name="description" content="Crea un código QR para compartir tu perfil de LinkedIn. Permite que profesionales y empresas accedan a tu perfil escaneando un QR desde su móvil. Ideal para networking y eventos.">
+
+	<meta name="robots" content="index, follow">
+
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="bg-enlace">
+
+<header class="main-header">
+	<div class="header-inner">
+
+		<div class="logo">
+			<a href="/">QRParaEmpresas</a>
+		</div>
+
+		<nav class="nav-menu">
+
+			<div class="dropdown">
+				<a href="/sectores/" class="dropbtn">Sectores ▾</a>
+				<div class="dropdown-content">
+					<a href="/sectores/restaurantes/">Restaurantes</a>
+					<a href="/sectores/hoteles/">Hoteles</a>
+					<a href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
+					<a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+					<a href="/sectores/gimnasios/">Gimnasios</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<a href="/generador/" class="dropbtn">Generadores QR ▾</a>
+				<div class="dropdown-content">
+					<a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+					<a href="/generador/qr-instagram/">QR Instagram</a>
+					<a href="/generador/qr-wifi/">QR WiFi</a>
+					<a href="/generador/qr-google-maps/">QR Google Maps</a>
+					<a href="/generador/qr-gmail/">QR Gmail</a>
+					<a href="/generador/qr-telefono/">QR Teléfono</a>
+					<a href="/generador/qr-youtube/">QR YouTube</a>
+					<a href="/generador/qr-pdf/">QR PDF</a>
+					<a href="/generador/qr-google-reviews/">QR Google Reviews</a>
+					<a href="/generador/qr-enlace/">QR Enlace</a>
+					<a href="/generador/qr-vcard/">QR vCard</a>
+					<a href="/generador/qr-google-forms/">QR Google Forms</a>
+					<a href="/generador/qr-telegram/">QR Canal Telegram</a>
+					<a href="/generador/qr-linkedin/">QR Perfil LinkedIn</a>
+				</div>
+			</div>
+
+			<a href="/contacto/" class="nav-link">Contacto</a>
+
+		</nav>
+
+	</div>
+</header>
+
+<div class="breadcrumb-wrapper">
+	<div class="breadcrumb">
+		<a href="/">Inicio</a> ›
+		<a href="/generador/">Generadores</a> ›
+		QR Perfil LinkedIn
+	</div>
+</div>
+
+<main class="container">
+
+<section class="hero">
+
+	<h1>Generador de Código QR para Perfil de LinkedIn</h1>
+
+	<p class="subtitle">
+		Crea un código QR para compartir tu perfil profesional de LinkedIn y permite
+		que otros profesionales accedan a tu perfil escaneando un simple código.
+	</p>
+
+</section>
+
+<section class="generator-block">
+
+	<div class="tool-box">
+
+		<input type="text" id="linkedin-input" placeholder="Introduce tu usuario de LinkedIn (ej: juan-perez)">
+
+		<button class="primary-btn" onclick="generateLinkedinQR()">
+			Generar QR LinkedIn
+		</button>
+
+	</div>
+
+	<div id="qr-result"></div>
+
+</section>
+
+<section class="info">
+
+	<h2>¿Qué es un código QR para LinkedIn?</h2>
+
+	<p>
+		Un código QR para LinkedIn permite compartir tu perfil profesional de forma
+		rápida y sencilla. Cuando alguien escanea el código con su teléfono móvil,
+		se abre automáticamente tu perfil en la plataforma LinkedIn.
+	</p>
+
+	<p>
+		LinkedIn es una de las redes profesionales más utilizadas del mundo.
+		Millones de profesionales, empresas y reclutadores utilizan esta
+		plataforma para establecer conexiones profesionales y descubrir
+		oportunidades laborales.
+	</p>
+
+	<p>
+		El código QR facilita el acceso a tu perfil sin necesidad de buscar tu
+		nombre manualmente o escribir enlaces largos.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Para qué sirve un QR de perfil de LinkedIn</h2>
+
+	<p>
+		Los códigos QR de LinkedIn se utilizan principalmente en situaciones
+		de networking profesional. En eventos, conferencias o reuniones de
+		trabajo, compartir tu perfil mediante un QR permite que otras personas
+		te encuentren fácilmente en la plataforma.
+	</p>
+
+	<p>
+		También es una herramienta muy útil para empresas que desean conectar
+		con clientes o candidatos potenciales.
+	</p>
+
+	<p>
+		Al escanear el código QR, el usuario puede acceder directamente al
+		perfil profesional y enviar una solicitud de conexión.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Usos del QR LinkedIn en entornos profesionales</h2>
+
+	<h3>Eventos y networking</h3>
+
+	<p>
+		En eventos profesionales, los códigos QR permiten intercambiar perfiles
+		de LinkedIn rápidamente sin necesidad de escribir nombres o correos.
+	</p>
+
+	<h3>Tarjetas de visita</h3>
+
+	<p>
+		Muchas tarjetas de visita modernas incluyen un código QR que dirige
+		al perfil de LinkedIn del profesional.
+	</p>
+
+	<h3>Presentaciones y conferencias</h3>
+
+	<p>
+		Los ponentes pueden incluir un código QR en sus presentaciones para
+		que los asistentes accedan fácilmente a su perfil.
+	</p>
+
+	<h3>Páginas web y portfolios</h3>
+
+	<p>
+		Los profesionales suelen incluir códigos QR en sus páginas web o
+		portfolios para facilitar que otros usuarios visiten su perfil.
+	</p>
+
+</section>
+
+<section class="info">
+
+	<h2>Ventajas de usar códigos QR para LinkedIn</h2>
+
+	<ul>
+		<li>Permite compartir tu perfil profesional rápidamente.</li>
+		<li>Facilita el networking en eventos y reuniones.</li>
+		<li>Evita escribir enlaces largos manualmente.</li>
+		<li>Compatible con la mayoría de smartphones.</li>
+		<li>Puede imprimirse en tarjetas de visita o material promocional.</li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Cómo crear un QR para tu perfil de LinkedIn</h2>
+
+	<ol>
+		<li>Introduce tu nombre de usuario de LinkedIn.</li>
+		<li>Genera el código QR.</li>
+		<li>Descarga el QR generado.</li>
+		<li>Utilízalo en tarjetas, presentaciones o material digital.</li>
+	</ol>
+
+</section>
+
+<section class="info">
+
+	<h2>Otros generadores de códigos QR</h2>
+
+	<p>
+		Además del QR de LinkedIn, puedes crear códigos QR para otras
+		plataformas y herramientas de marketing digital.
+	</p>
+
+	<ul>
+		<li><a href="/generador/qr-whatsapp/">QR para WhatsApp</a></li>
+		<li><a href="/generador/qr-instagram/">QR para Instagram</a></li>
+		<li><a href="/generador/qr-google-reviews/">QR para Google Reviews</a></li>
+		<li><a href="/generador/qr-vcard/">QR para tarjeta de contacto</a></li>
+	</ul>
+
+</section>
+
+<section class="info">
+
+	<h2>Preguntas frecuentes sobre QR LinkedIn</h2>
+
+	<h3>¿Para qué sirve un QR de LinkedIn?</h3>
+	<p>
+		Permite acceder a un perfil profesional de LinkedIn escaneando un código QR.
+	</p>
+
+	<h3>¿Es gratis crear un QR para LinkedIn?</h3>
+	<p>
+		Sí, puedes generar códigos QR para LinkedIn de forma gratuita.
+	</p>
+
+	<h3>¿Funciona en cualquier móvil?</h3>
+	<p>
+		La mayoría de smartphones actuales pueden escanear códigos QR
+		directamente desde la cámara.
+	</p>
+
+	<h3>¿Se puede imprimir el QR?</h3>
+	<p>
+		Sí, puedes imprimir el código QR en tarjetas de visita o material
+		profesional.
+	</p>
+
+</section>
+
+<footer class="footer">
+	<a href="/legal/privacidad/">Privacidad</a> |
+	<a href="/legal/aviso-legal/">Aviso Legal</a> |
+	<a href="/legal/cookies/">Cookies</a> |
+	<a href="/contacto/">Contacto</a>
+</footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="/assets/js/script.js"></script>
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [{
+		"@type": "Question",
+		"name": "¿Para qué sirve un QR de LinkedIn?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Permite abrir un perfil profesional de LinkedIn escaneando un código QR."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Es gratis generar un QR para LinkedIn?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Sí, puedes crear códigos QR para perfiles de LinkedIn de forma gratuita."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Funciona en cualquier móvil?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "La mayoría de smartphones pueden escanear códigos QR desde la cámara."
+		}
+	},{
+		"@type": "Question",
+		"name": "¿Se puede imprimir el código QR?",
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": "Sí, el QR puede imprimirse en tarjetas de visita o material promocional."
+		}
+	}]
+}
+</script>
+
+</body>
+</html>
