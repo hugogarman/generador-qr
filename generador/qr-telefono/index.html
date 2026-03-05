@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-enlace">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Generador de Código QR para Teléfono | Llamadas Directas</title>
+
+  <meta name="description" content="Crea un código QR para teléfono y permite que los clientes llamen directamente a tu negocio escaneando el código. Ideal para empresas, restaurantes, clínicas y comercios.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="header-inner">
+
+    <div class="logo">
+      <a href="/">QRParaEmpresas</a>
+    </div>
+
+    <nav class="nav-menu">
+
+      <div class="dropdown">
+        <a href="/sectores/" class="dropbtn">Sectores ▾</a>
+        <div class="dropdown-content">
+          <a href="/sectores/restaurantes/">Restaurantes</a>
+          <a href="/sectores/hoteles/">Hoteles</a>
+          <a href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
+          <a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+          <a href="/sectores/gimnasios/">Gimnasios</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="/generador/" class="dropbtn">Generadores QR ▾</a>
+        <div class="dropdown-content">
+          <a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+          <a href="/generador/qr-instagram/">QR Instagram</a>
+          <a href="/generador/qr-wifi/">QR WiFi</a>
+          <a href="/generador/qr-google-maps/">QR Google Maps</a>
+          <a href="/generador/qr-telefono/">QR Teléfono</a>
+        </div>
+      </div>
+
+      <a href="/contacto/" class="nav-link">Contacto</a>
+
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb-wrapper">
+  <div class="breadcrumb">
+    <a href="/">Inicio</a> ›
+    <a href="/generador/">Generadores QR</a> ›
+    Teléfono
+  </div>
+</div>
+
+<main class="container">
+
+<section class="hero">
+  <h1>Generador de Código QR para Teléfono</h1>
+  <p class="subtitle">
+    Permite que tus clientes llamen a tu negocio escaneando un código QR.
+    Una forma rápida y cómoda de facilitar llamadas desde móviles sin tener que marcar el número manualmente.
+  </p>
+</section>
+
+<section class="generator-block">
+  <div class="tool-box">
+    <input type="text" id="phone-input" placeholder="Introduce tu número de teléfono (ej: 34600111222)">
+    <button class="primary-btn" onclick="generatePhoneQR()">Generar QR Teléfono</button>
+  </div>
+  <div id="qr-result"></div>
+</section>
+
+<section class="info">
+
+  <h2>¿Qué es un código QR para teléfono?</h2>
+
+  <p>
+    Un código QR para teléfono permite iniciar una llamada automáticamente al escanear el código con un smartphone.
+    En lugar de copiar o marcar manualmente un número de teléfono, el usuario solo necesita escanear el QR para que su dispositivo
+    abra la aplicación de llamadas con el número preparado.
+  </p>
+
+  <p>
+    Este tipo de código QR utiliza el formato <strong>tel:</strong>, que es compatible con la mayoría de dispositivos móviles.
+    Cuando el usuario escanea el código, el sistema operativo del teléfono reconoce el enlace y muestra la opción de iniciar la llamada.
+  </p>
+
+  <p>
+    Los códigos QR de teléfono se utilizan cada vez más en negocios físicos porque facilitan el contacto inmediato con los clientes.
+    Restaurantes, hoteles, clínicas o tiendas utilizan estos códigos para que los usuarios puedan llamar rápidamente sin escribir números.
+  </p>
+
+</section>
+
+<section class="info">
+
+  <h2>Ventajas de usar un QR para llamadas</h2>
+
+  <ul>
+    <li>Permite llamar al negocio en segundos.</li>
+    <li>Evita errores al marcar números largos.</li>
+    <li>Facilita el contacto desde dispositivos móviles.</li>
+    <li>Mejora la experiencia del cliente.</li>
+    <li>Puede imprimirse en cualquier soporte físico.</li>
+  </ul>
+
+</section>
+
+<section class="info">
+
+  <h2>Usos del código QR de teléfono en empresas</h2>
+
+  <h3>Reservas en restaurantes</h3>
+  <p>
+    Muchos restaurantes utilizan códigos QR para facilitar las reservas telefónicas.
+    Colocar un QR en la puerta o en material publicitario permite que los clientes llamen rápidamente.
+  </p>
+
+  <h3>Citas en clínicas y centros médicos</h3>
+  <p>
+    Las clínicas dentales, centros médicos o consultas privadas utilizan códigos QR para permitir que los pacientes
+    soliciten cita llamando directamente al número del centro.
+  </p>
+
+  <h3>Atención al cliente</h3>
+  <p>
+    Algunas empresas colocan códigos QR de teléfono en productos o documentación para que los usuarios puedan contactar
+    rápidamente con el servicio de soporte.
+  </p>
+
+</section>
+
+<section class="info">
+
+  <h2>Dónde colocar un código QR para llamadas</h2>
+
+  <p>
+    Los códigos QR para teléfono pueden colocarse en diferentes soportes para facilitar el contacto con clientes.
+  </p>
+
+  <h3>Tarjetas de visita</h3>
+  <p>
+    Incluir un código QR en una tarjeta de visita permite que cualquier persona llame directamente al número escaneando el código.
+  </p>
+
+  <h3>Escaparates o carteles</h3>
+  <p>
+    Muchos negocios colocan códigos QR en escaparates para que los clientes puedan llamar incluso cuando el establecimiento está cerrado.
+  </p>
+
+  <h3>Material publicitario</h3>
+  <p>
+    Los códigos QR también pueden utilizarse en flyers, anuncios o campañas publicitarias para facilitar el contacto telefónico.
+  </p>
+
+</section>
+
+<section class="info">
+
+  <h2>Cómo crear un código QR para teléfono</h2>
+
+  <ol>
+    <li>Introduce el número de teléfono en el generador.</li>
+    <li>Haz clic en generar código QR.</li>
+    <li>Descarga la imagen del QR.</li>
+    <li>Coloca el código en tarjetas, carteles o publicidad.</li>
+  </ol>
+
+</section>
+
+<section class="info">
+
+  <h2>Otros generadores de códigos QR</h2>
+
+  <p>
+    También puedes crear otros códigos QR útiles para empresas y negocios:
+  </p>
+
+  <ul>
+    <li><a href="/generador/qr-whatsapp/">Generador QR para WhatsApp</a></li>
+    <li><a href="/generador/qr-instagram/">Generador QR para Instagram</a></li>
+    <li><a href="/generador/qr-wifi/">Generador QR para WiFi</a></li>
+    <li><a href="/generador/qr-google-maps/">Generador QR para Google Maps</a></li>
+  </ul>
+
+</section>
+
+<section class="info">
+
+  <h2>Preguntas frecuentes sobre QR para teléfono</h2>
+
+  <h3>¿Es gratis crear un código QR para teléfono?</h3>
+  <p>
+    Sí, puedes generar códigos QR para números de teléfono de forma gratuita y utilizarlos sin limitaciones.
+  </p>
+
+  <h3>¿Funciona en cualquier móvil?</h3>
+  <p>
+    Sí, los smartphones actuales pueden reconocer códigos QR y abrir automáticamente la aplicación de llamadas.
+  </p>
+
+  <h3>¿Se puede imprimir el código QR?</h3>
+  <p>
+    Sí, puedes imprimirlo en tarjetas de visita, carteles o material publicitario.
+  </p>
+
+  <h3>¿Es útil para negocios locales?</h3>
+  <p>
+    Sí, especialmente para restaurantes, clínicas, hoteles o comercios donde los clientes suelen llamar para consultar información.
+  </p>
+
+</section>
+
+<footer class="footer">
+  <a href="/legal/privacidad/">Privacidad</a> |
+  <a href="/legal/aviso-legal/">Aviso Legal</a> |
+  <a href="/legal/cookies/">Cookies</a> |
+  <a href="/contacto/">Contacto</a>
+</footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="/assets/js/script.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"¿Es gratis crear un código QR para teléfono?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí, puedes generar códigos QR para números de teléfono gratuitamente."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Funciona en cualquier móvil?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí, los smartphones actuales pueden escanear códigos QR y abrir la aplicación de llamadas."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Se puede imprimir el código QR?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí, el código QR puede imprimirse en tarjetas, carteles o publicidad."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Es útil para negocios locales?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí, es especialmente útil para restaurantes, clínicas, hoteles y comercios."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
