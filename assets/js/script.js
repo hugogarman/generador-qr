@@ -333,6 +333,41 @@ function generateTikTokQR() {
 	createQR(input, "qr-tiktok");
 }
 
+/* ======================================================
+   GENERAR QR EVENTO CALENDARIO
+====================================================== */
+
+function generateEventQR() {
+
+	const title = document.getElementById("event-title").value.trim();
+	const location = document.getElementById("event-location").value.trim();
+	const start = document.getElementById("event-start").value;
+	const end = document.getElementById("event-end").value;
+
+	if (!title || !start) {
+		alert("Introduce al menos el nombre del evento y la fecha.");
+		return;
+	}
+
+	const startDate = new Date(start).toISOString().replace(/[-:]/g,"").split(".")[0]+"Z";
+	const endDate = end
+		? new Date(end).toISOString().replace(/[-:]/g,"").split(".")[0]+"Z"
+		: startDate;
+
+	const eventData =
+`BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:${title}
+LOCATION:${location}
+DTSTART:${startDate}
+DTEND:${endDate}
+END:VEVENT
+END:VCALENDAR`;
+
+	createQR(eventData, "qr-evento");
+}
+
 /* =====================================================
    MENÚ DESPLEGABLE DEL HEADER
    Controla apertura y cierre de dropdowns
