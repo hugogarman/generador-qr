@@ -300,6 +300,39 @@ function generateLinkedinQR() {
 
 }
 
+/* ======================================================
+   GENERAR QR TIKTOK (usuario o enlace)
+====================================================== */
+
+function generateTikTokQR() {
+
+	const inputField = document.getElementById("tiktok-input");
+	if (!inputField) return;
+
+	let input = inputField.value.trim();
+
+	if (!input) {
+		alert("Introduce un usuario o enlace de TikTok.");
+		return;
+	}
+
+	/* Si es usuario */
+
+	if (!input.includes("tiktok.com")) {
+
+		input = input.replace("@", "");
+
+		if (!/^[a-zA-Z0-9._]+$/.test(input)) {
+			alert("Usuario de TikTok no válido.");
+			return;
+		}
+
+		input = "https://www.tiktok.com/@" + input;
+	}
+
+	createQR(input, "qr-tiktok");
+}
+
 /* =====================================================
    MENÚ DESPLEGABLE DEL HEADER
    Controla apertura y cierre de dropdowns
