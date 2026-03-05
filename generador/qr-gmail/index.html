@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-enlace">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Generador de Código QR para Gmail | Enviar Correo al Instante</title>
+
+  <meta name="description" content="Crea un código QR para Gmail y permite que clientes envíen correos electrónicos al instante. Generador QR para contacto, soporte, reservas y consultas desde el móvil.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="header-inner">
+
+    <div class="logo">
+      <a href="/">QRParaEmpresas</a>
+    </div>
+
+    <nav class="nav-menu">
+
+      <div class="dropdown">
+        <a href="/sectores/" class="dropbtn">Sectores ▾</a>
+        <div class="dropdown-content">
+          <a href="/sectores/restaurantes/">Restaurantes</a>
+          <a href="/sectores/hoteles/">Hoteles</a>
+          <a href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
+          <a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+          <a href="/sectores/gimnasios/">Gimnasios</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="/generador/" class="dropbtn">Generadores QR ▾</a>
+        <div class="dropdown-content">
+          <a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+          <a href="/generador/qr-instagram/">QR Instagram</a>
+          <a href="/generador/qr-wifi/">QR WiFi</a>
+          <a href="/generador/qr-google-maps/">QR Google Maps</a>
+          <a href="/generador/qr-gmail/">QR Gmail</a>
+        </div>
+      </div>
+
+      <a href="/contacto/" class="nav-link">Contacto</a>
+
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb-wrapper">
+  <div class="breadcrumb">
+    <a href="/">Inicio</a> ›
+    <a href="/generador/">Generadores QR</a> ›
+    Gmail
+  </div>
+</div>
+
+<main class="container">
+
+<section class="hero">
+  <h1>Generador de Código QR para Gmail</h1>
+  <p class="subtitle">
+    Permite que clientes o usuarios envíen un correo electrónico a tu cuenta de Gmail escaneando un código QR.
+    Una forma rápida de facilitar el contacto desde tarjetas, carteles o material publicitario.
+  </p>
+</section>
+
+<section class="generator-block">
+  <div class="tool-box">
+    <input type="text" id="email-input" placeholder="Introduce tu dirección Gmail (ej: contacto@gmail.com)">
+    <button class="primary-btn" onclick="generateEmailQR()">Generar QR Gmail</button>
+  </div>
+  <div id="qr-result"></div>
+</section>
+
+<section class="info">
+  <h2>¿Qué es un código QR para Gmail?</h2>
+
+  <p>
+    Un código QR para Gmail es un tipo de código QR que permite abrir automáticamente la aplicación de correo electrónico
+    con una dirección de Gmail ya preparada como destinatario. Cuando un usuario escanea el código con su móvil,
+    el dispositivo abre la aplicación de correo y permite enviar un mensaje en cuestión de segundos.
+  </p>
+
+  <p>
+    Este sistema es especialmente útil para empresas, profesionales y negocios que desean facilitar el contacto con
+    clientes o colaboradores. En lugar de copiar manualmente una dirección de correo electrónico, el usuario solo
+    necesita escanear el código QR y escribir su mensaje.
+  </p>
+
+  <p>
+    Los códigos QR para Gmail utilizan el formato estándar de enlaces <strong>mailto:</strong>, que es compatible
+    con prácticamente todos los smartphones modernos y aplicaciones de correo electrónico.
+  </p>
+
+</section>
+
+<section class="info">
+
+  <h2>Ventajas de usar un QR para Gmail</h2>
+
+  <ul>
+    <li>Permite enviar correos electrónicos de forma inmediata.</li>
+    <li>Evita errores al escribir direcciones largas.</li>
+    <li>Facilita el contacto desde dispositivos móviles.</li>
+    <li>Puede imprimirse en tarjetas o carteles.</li>
+    <li>Compatible con la mayoría de aplicaciones de correo.</li>
+  </ul>
+
+</section>
+
+<section class="info">
+
+  <h2>Usos del QR para Gmail en empresas</h2>
+
+  <h3>Atención al cliente</h3>
+  <p>
+    Muchas empresas utilizan códigos QR para facilitar que los clientes envíen consultas o solicitudes de información.
+    Colocar un QR en el establecimiento permite que cualquier persona envíe un correo electrónico rápidamente.
+  </p>
+
+  <h3>Soporte técnico</h3>
+  <p>
+    Los códigos QR también pueden utilizarse para que los usuarios contacten con el servicio técnico.
+    Esto es común en productos tecnológicos, manuales de instrucciones o centros de soporte.
+  </p>
+
+  <h3>Contacto comercial</h3>
+  <p>
+    En ferias, congresos o eventos profesionales, los códigos QR para Gmail facilitan el intercambio de contacto
+    entre empresas y clientes potenciales.
+  </p>
+
+</section>
+
+<section class="info">
+
+  <h2>Dónde colocar un código QR de Gmail</h2>
+
+  <p>
+    Los códigos QR de correo electrónico pueden colocarse en diferentes soportes físicos o digitales para facilitar
+    el contacto con clientes o usuarios.
+  </p>
+
+  <h3>Tarjetas de visita</h3>
+  <p>
+    Incluir un código QR que abra un correo electrónico facilita que los clientes contacten directamente contigo
+    sin necesidad de escribir la dirección manualmente.
+  </p>
+
+  <h3>Carteles informativos</h3>
+  <p>
+    Algunos negocios colocan códigos QR en carteles para que los usuarios envíen sugerencias, comentarios
+    o consultas directamente al correo electrónico de la empresa.
+  </p>
+
+  <h3>Páginas web o documentos</h3>
+  <p>
+    También es posible utilizar códigos QR en páginas web, presentaciones o documentos digitales para facilitar
+    el envío de correos electrónicos desde dispositivos móviles.
+  </p>
+
+</section>
+
+<section class="info">
+
+  <h2>Cómo crear un código QR para Gmail</h2>
+
+  <ol>
+    <li>Introduce tu dirección de Gmail en el generador.</li>
+    <li>Haz clic en generar código QR.</li>
+    <li>Descarga la imagen del QR.</li>
+    <li>Coloca el código en tarjetas, carteles o material publicitario.</li>
+  </ol>
+
+</section>
+
+<section class="info">
+
+  <h2>Otros generadores de códigos QR</h2>
+
+  <p>
+    Además del QR para Gmail, puedes utilizar otros generadores útiles para negocios y marketing digital:
+  </p>
+
+  <ul>
+    <li><a href="/generador/qr-whatsapp/">Generador QR para WhatsApp</a></li>
+    <li><a href="/generador/qr-instagram/">Generador QR para Instagram</a></li>
+    <li><a href="/generador/qr-wifi/">Generador QR para WiFi</a></li>
+    <li><a href="/generador/qr-google-maps/">Generador QR para Google Maps</a></li>
+  </ul>
+
+</section>
+
+<section class="info">
+
+  <h2>Preguntas frecuentes sobre QR para Gmail</h2>
+
+  <h3>¿Es gratis crear un código QR para Gmail?</h3>
+  <p>
+    Sí, puedes generar códigos QR para direcciones Gmail de forma gratuita y utilizarlos en cualquier soporte.
+  </p>
+
+  <h3>¿Funciona en cualquier móvil?</h3>
+  <p>
+    Sí, la mayoría de smartphones modernos pueden escanear códigos QR y abrir enlaces de correo electrónico.
+  </p>
+
+  <h3>¿Se puede imprimir el código QR?</h3>
+  <p>
+    Sí, puedes imprimirlo en tarjetas de visita, carteles, folletos o cualquier material promocional.
+  </p>
+
+  <h3>¿Solo funciona con Gmail?</h3>
+  <p>
+    No. Aunque se utilice una dirección Gmail, el QR abrirá la aplicación de correo predeterminada del usuario.
+  </p>
+
+</section>
+
+<footer class="footer">
+  <a href="/legal/privacidad/">Privacidad</a> |
+  <a href="/legal/aviso-legal/">Aviso Legal</a> |
+  <a href="/legal/cookies/">Cookies</a> |
+  <a href="/contacto/">Contacto</a>
+</footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="/assets/js/script.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"¿Es gratis crear un código QR para Gmail?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí, puedes generar códigos QR para Gmail de forma gratuita."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Funciona en cualquier móvil?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí, los smartphones modernos pueden escanear códigos QR y abrir enlaces de correo."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Se puede imprimir el código QR?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Sí, puedes imprimir el código QR en cualquier soporte físico."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"¿Solo funciona con Gmail?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"No, el enlace mailto puede abrirse en cualquier aplicación de correo."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
