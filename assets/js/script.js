@@ -369,6 +369,46 @@ END:VCALENDAR`;
 }
 
 // ============================
+// QR EVENTO / ENTRADA EVENTO
+// ============================
+
+function generateEventQR() {
+
+	const titleField = document.getElementById("event-title");
+	const dateField = document.getElementById("event-date");
+	const locationField = document.getElementById("event-location");
+
+	if (!titleField || !dateField) return;
+
+	const title = titleField.value.trim();
+	const date = dateField.value.trim();
+	const location = locationField.value.trim();
+
+	if (!title || !date) {
+		alert("Introduce al menos el nombre y fecha del evento.");
+		return;
+	}
+
+	const startDate = new Date(date);
+
+	const formatDate = (d) => {
+		return d.toISOString().replace(/[-:]/g,"").split(".")[0] + "Z";
+	};
+
+	const eventPayload =
+`BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:${title}
+DTSTART:${formatDate(startDate)}
+LOCATION:${location}
+END:VEVENT
+END:VCALENDAR`;
+
+	createQR(eventPayload, `qr-evento-${title}`);
+}
+
+// ============================
 // QR TWITTER
 // ============================
 
