@@ -244,6 +244,35 @@ function generateWiFiQR() {
 
 }
 
+/* =========================
+   GENERAR QR VCARD CONTACTO
+========================= */
+
+function generateVCardQR() {
+
+	const name = document.getElementById("vcard-name").value.trim();
+	const phone = document.getElementById("vcard-phone").value.trim();
+	const email = document.getElementById("vcard-email").value.trim();
+	const company = document.getElementById("vcard-company").value.trim();
+
+	if (!name && !phone && !email) {
+		alert("Introduce al menos un dato de contacto.");
+		return;
+	}
+
+	let vcard =
+`BEGIN:VCARD
+VERSION:3.0
+FN:${name}
+ORG:${company}
+TEL:${phone}
+EMAIL:${email}
+END:VCARD`;
+
+	createQR(vcard, "qr-vcard");
+
+}
+
 /* =====================================================
    MENÚ DESPLEGABLE DEL HEADER
    Controla apertura y cierre de dropdowns
