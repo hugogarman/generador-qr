@@ -181,6 +181,66 @@ p {
   background: #f1f5f9;
 }
 
+/* =======================================================
+   SUBMENUS DEL DROPDOWN (CATEGORÍAS GENERADORES)
+======================================================= */
+
+.submenu {
+  position: relative;
+}
+
+/* título de categoría */
+.submenu-title {
+  display: block;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: default;
+}
+
+/* flecha derecha */
+.submenu-title::after {
+  content: "▸";
+  float: right;
+  opacity: 0.6;
+}
+
+/* hover categoría */
+.submenu-title:hover {
+  background: #f1f5f9;
+}
+
+/* menú lateral */
+.submenu-items {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--color-border);
+  display: none;
+  min-width: 220px;
+  padding: 8px 0;
+}
+
+/* mostrar submenu */
+.submenu:hover .submenu-items {
+  display: block;
+}
+
+.submenu-items a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.submenu-items a:hover {
+  background: #f1f5f9;
+}
+
 /* ===== BREADCRUMB LIMPIO Y ALINEADO ===== */
 
 .breadcrumb-wrapper {
