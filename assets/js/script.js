@@ -128,6 +128,121 @@ function generateWhatsAppQR() {
 
 }
 
+/* =====================================================
+   GENERADOR QR INSTAGRAM
+   El usuario introduce solo su nombre de usuario
+===================================================== */
+
+function generateInstagramQR() {
+
+  const inputField = document.getElementById("insta-input");
+  if (!inputField) return;
+
+  let username = inputField.value.trim();
+
+  if (!username) {
+    alert("Introduce tu usuario de Instagram.");
+    return;
+  }
+
+  username = username.replace("@", "");
+
+  if (!/^[a-zA-Z0-9._]+$/.test(username)) {
+    alert("El usuario contiene caracteres no válidos.");
+    return;
+  }
+
+  const instaLink = "https://instagram.com/" + username;
+
+  createQR(instaLink, `qr-instagram-${username}`);
+
+}
+
+/* =====================================================
+   GENERADOR QR EMAIL
+   Convierte un email en enlace mailto
+===================================================== */
+
+function generateEmailQR() {
+
+  const inputField = document.getElementById("email-input");
+  if (!inputField) return;
+
+  let email = inputField.value.trim();
+
+  if (!email) {
+    alert("Introduce un correo válido.");
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+    alert("El correo no es válido.");
+    return;
+  }
+
+  const mailLink = "mailto:" + email;
+
+  createQR(mailLink, `qr-email-${email}`);
+
+}
+
+/* =====================================================
+   GENERADOR QR TELÉFONO
+   Permite llamar al escanear el QR
+===================================================== */
+
+function generatePhoneQR() {
+
+  const inputField = document.getElementById("phone-input");
+  if (!inputField) return;
+
+  let phone = inputField.value.trim();
+
+  if (!phone) {
+    alert("Introduce un número válido.");
+    return;
+  }
+
+  phone = phone.replace(/\s+/g, "").replace("+", "");
+
+  if (!/^\d+$/.test(phone)) {
+    alert("El número solo debe contener dígitos.");
+    return;
+  }
+
+  const phoneLink = "tel:+" + phone;
+
+  createQR(phoneLink, `qr-telefono-${phone}`);
+
+}
+
+/* =====================================================
+   GENERADOR QR WIFI
+   Conecta automáticamente a la red WiFi
+===================================================== */
+
+function generateWiFiQR() {
+
+  const ssidField = document.getElementById("wifi-ssid");
+  const passField = document.getElementById("wifi-password");
+
+  if (!ssidField || !passField) return;
+
+  const ssid = ssidField.value.trim();
+  const password = passField.value.trim();
+
+  if (!ssid || !password) {
+    alert("Introduce el nombre de la red y la contraseña.");
+    return;
+  }
+
+  const wifiString = `WIFI:T:WPA;S:${ssid};P:${password};;`;
+
+  createQR(wifiString, `qr-wifi-${ssid}`);
+
+}
 
 /* =====================================================
    MENÚ DESPLEGABLE DEL HEADER
