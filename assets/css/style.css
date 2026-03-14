@@ -126,6 +126,11 @@ p {
   align-items: center;
 }
 
+.logo img {
+	height: 48px;
+	width: auto;
+}
+
 /* =======================================================
    DROPDOWN ARREGLADO DEFINITIVO
 ======================================================= */
