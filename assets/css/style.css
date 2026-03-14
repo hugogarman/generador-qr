@@ -108,27 +108,26 @@ p {
 .header-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 18px 20px;
+  padding: 14px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo a {
-  font-weight: 800;
-  font-size: 20px;
-  color: var(--color-text);
+/* LOGO */
+
+.logo img {
+  height: 64px;
+  width: auto;
+  display: block;
 }
+
+/* MENÚ */
 
 .nav-menu {
   display: flex;
   gap: 30px;
   align-items: center;
-}
-
-.logo img {
-	height: 48px;
-	width: auto;
 }
 
 /* =======================================================
