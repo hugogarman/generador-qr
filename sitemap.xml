@@ -1,48 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- HOME -->
   <url>
     <loc>https://qrparaempresas.com/</loc>
   </url>
 
+  <!-- GENERADORES -->
   <url>
     <loc>https://qrparaempresas.com/generador/</loc>
   </url>
 
-  <url>
-    <loc>https://qrparaempresas.com/generador/qr-whatsapp/</loc>
-  </url>
+  <url><loc>https://qrparaempresas.com/generador/qr-app-store/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-apple-maps/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-dropbox/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-enlace/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-entrada-evento/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-evento/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-facebook/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-gmail/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-google-forms/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-google-maps/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-google-play/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-google-reviews/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-instagram/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-linkedin/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-paypal/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-pdf/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-spotify/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-telefono/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-telegram/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-tiktok/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-twitter/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-vcard/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-whatsapp/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-wifi/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-youtube/</loc></url>
+  <url><loc>https://qrparaempresas.com/generador/qr-zoom/</loc></url>
 
-  <url>
-    <loc>https://qrparaempresas.com/generador/qr-instagram/</loc>
-  </url>
-
-  <url>
-    <loc>https://qrparaempresas.com/generador/qr-wifi/</loc>
-  </url>
-
+  <!-- SECTORES -->
   <url>
     <loc>https://qrparaempresas.com/sectores/</loc>
   </url>
 
-  <url>
-    <loc>https://qrparaempresas.com/sectores/restaurantes/</loc>
-  </url>
+  <url><loc>https://qrparaempresas.com/sectores/abogados/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/academias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/aeropuertos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/alquiler-coches/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/apartamentos-turisticos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/asesorias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/autobuses/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/autoescuelas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/barberias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/bares/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/bodas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/casas-rurales/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/centros-estetica/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/centros-medicos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/clinicas-dentales/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/concesionarios/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/conciertos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/cursos-formacion/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/cursos-online/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/discotecas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/escuelas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/estaciones-tren/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/fabricas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/farmacias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/festivales/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/fisioterapia/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/floristerias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/food-trucks/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/gasolineras/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/gestorias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/gimnasios/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/guias-turisticos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/hamburgueserias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/hostales/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/hoteles/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/inmobiliarias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/museos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/notarias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/nutricionistas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/oficinas-turismo/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/opticas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/organizadores-eventos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/parkings/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/parques-naturales/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/parques-tematicos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/peluquerias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/pizzerias/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/psicologos/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/restaurantes-comida-rapida/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/restaurantes/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/rutas-turisticas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/salones-de-unas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/spas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/supermercados/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/talleres/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/tiendas-ropa/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/tiendas/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/universidades/</loc></url>
+  <url><loc>https://qrparaempresas.com/sectores/veterinarias/</loc></url>
 
+  <!-- PAGINAS LEGALES -->
   <url>
-    <loc>https://qrparaempresas.com/sectores/hoteles/</loc>
-  </url>
-
-  <url>
-    <loc>https://qrparaempresas.com/sectores/apartamentos-turisticos/</loc>
-  </url>
-
-  <url>
-    <loc>https://qrparaempresas.com/sectores/clinicas-dentales/</loc>
-  </url>
-
-  <url>
-    <loc>https://qrparaempresas.com/sectores/gimnasios/</loc>
+    <loc>https://qrparaempresas.com/contacto/</loc>
   </url>
 
   <url>
@@ -55,10 +118,6 @@
 
   <url>
     <loc>https://qrparaempresas.com/legal/cookies/</loc>
-  </url>
-
-  <url>
-    <loc>https://qrparaempresas.com/contacto/</loc>
   </url>
 
 </urlset>
