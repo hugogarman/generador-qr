@@ -526,6 +526,15 @@ display:none;
 display:block;
 }
 
+.close-menu{
+font-size:22px;
+background:none;
+border:none;
+cursor:pointer;
+padding:4px 8px;
+width:auto;
+}   
+
 h1{
 font-size:30px;
 }
