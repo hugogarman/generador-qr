@@ -461,84 +461,110 @@ main.legal-page section.info p {
   line-height: 1.6;
 }
 
-/* =======================================================
-   RESPONSIVE MOVIL ARREGLADO
-======================================================= */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
 
-@media (max-width: 768px) {
+.mobile-menu{
+position:fixed;
+top:0;
+left:0;
+width:85%;
+height:100%;
+background:#fff;
+z-index:2000;
+transform:translateX(-100%);
+transition:transform .3s ease;
+overflow-y:auto;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+}
 
-  /* TITULOS */
+.mobile-menu.open{
+transform:translateX(0);
+}
 
-  h1 {
-    font-size: 30px;
-  }
+.mobile-panel{
+display:none;
+padding:20px;
+}
 
-  h2 {
-    font-size: 22px;
-  }
+.mobile-panel.active{
+display:block;
+}
 
-  /* CONTAINER */
+.mobile-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+font-weight:600;
+}
 
-  .container {
-    padding: 40px 20px;
-  }
+.mobile-link,
+.mobile-panel a{
+display:block;
+padding:14px 0;
+border-bottom:1px solid #eee;
+text-decoration:none;
+color:#222;
+}
 
-  /* HEADER */
+.has-next::after{
+content:"›";
+float:right;
+}
 
-  .header-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+@media (max-width:768px){
 
-  .logo img {
-    height: 48px;
-  }
+.nav-menu{
+display:none;
+}
 
-  .nav-menu {
-    gap: 18px;
-    font-size: 15px;
-  }
+.menu-toggle{
+display:block;
+}
 
-  /* DROPDOWN MOVIL */
+h1{
+font-size:30px;
+}
 
-  .dropdown-content {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding: 6px 0;
-  }
+h2{
+font-size:22px;
+}
 
-  .submenu-items {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding-left: 12px;
-  }
+.container{
+padding:40px 20px;
+}
 
-  /* GENERADOR */
+.header-inner{
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+}
 
-  .tool-box {
-    flex-direction: column;
-  }
+.logo img{
+height:48px;
+}
 
-  button {
-    width: 100%;
-  }
+.tool-box{
+flex-direction:column;
+}
 
-  /* CARDS */
+button{
+width:100%;
+}
 
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
+.cards{
+grid-template-columns:1fr;
+gap:18px;
+}
 
-  .card {
-    padding: 16px;
-  }
+.card{
+padding:16px;
+}
 
-  .card p {
-    font-size: 14px;
-  }
-
+.card p{
+font-size:14px;
 }
