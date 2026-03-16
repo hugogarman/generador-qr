@@ -1,890 +1,1024 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="bg-enlace">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Código QR para Restaurantes | Carta Digital y Menú Online Gratis</title>
-<meta name="description" content="Crea un código QR para tu restaurante y ofrece una carta digital o menú online accesible desde el móvil. Generador gratis para bares, cafeterías y negocios de hostelería.">
-<link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-
-<header class="main-header">
-  <div class="header-inner">
-    <div class="logo">
-	<a href="/">
-		<img src="/assets/img/logo.png" alt="QRParaEmpresas">
-	</a>
-</div>
-
-    <nav class="nav-menu">
-
-      <!-- GENERADORES -->
-      <div class="dropdown">
-        <a href="/generador/" class="dropbtn">Generadores QR ▾</a>
-
-        <div class="dropdown-content">
-
-          <div class="submenu">
-            <span class="submenu-title">Más populares</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-whatsapp/">QR WhatsApp</a>
-              <a href="/generador/qr-wifi/">QR WiFi</a>
-              <a href="/generador/qr-google-reviews/">QR Google Reviews</a>
-              <a href="/generador/qr-instagram/">QR Instagram</a>
-              <a href="/generador/qr-enlace/">QR Enlace</a>
-              <a href="/generador/qr-vcard/">QR vCard</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Redes sociales</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-instagram/">QR Instagram</a>
-              <a href="/generador/qr-facebook/">QR Facebook</a>
-              <a href="/generador/qr-tiktok/">QR TikTok</a>
-              <a href="/generador/qr-twitter/">QR Twitter</a>
-              <a href="/generador/qr-linkedin/">QR LinkedIn</a>
-              <a href="/generador/qr-youtube/">QR YouTube</a>
-              <a href="/generador/qr-spotify/">QR Spotify</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Contacto y comunicación</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-whatsapp/">QR WhatsApp</a>
-              <a href="/generador/qr-telefono/">QR Teléfono</a>
-              <a href="/generador/qr-gmail/">QR Gmail</a>
-              <a href="/generador/qr-vcard/">QR vCard</a>
-              <a href="/generador/qr-telegram/">QR Telegram</a>
-              <a href="/generador/qr-zoom/">QR Zoom</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Negocio y marketing</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-google-reviews/">QR Google Reviews</a>
-              <a href="/generador/qr-enlace/">QR Enlace</a>
-              <a href="/generador/qr-google-forms/">QR Google Forms</a>
-              <a href="/generador/qr-paypal/">QR PayPal</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Mapas y ubicación</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-google-maps/">QR Google Maps</a>
-              <a href="/generador/qr-apple-maps/">QR Apple Maps</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Archivos y contenido</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-pdf/">QR PDF</a>
-              <a href="/generador/qr-dropbox/">QR Dropbox</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Eventos</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-evento/">QR Evento</a>
-              <a href="/generador/qr-entrada-evento/">QR Entrada evento</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Apps</span>
-            <div class="submenu-items">
-              <a href="/generador/qr-app-store/">QR App Store</a>
-              <a href="/generador/qr-google-play/">QR Google Play</a>
-            </div>
-          </div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Código QR para Restaurantes | Carta Digital y Menú Online Gratis
+    </title>
+    <meta
+      name="description"
+      content="Crea un código QR para tu restaurante y ofrece una carta digital o menú online accesible desde el móvil. Generador gratis para bares, cafeterías y negocios de hostelería."
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="/">
+            <img src="/assets/img/logo.png" alt="QRParaEmpresas" />
+          </a>
         </div>
+
+        <div class="menu-toggle">☰</div>
+
+        <nav class="nav-menu">
+          <!-- GENERADORES -->
+          <div class="dropdown">
+            <a href="/generador/" class="dropbtn">Generadores QR ▾</a>
+
+            <div class="dropdown-content">
+              <div class="submenu">
+                <span class="submenu-title">Más populares</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+                  <a href="/generador/qr-wifi/">QR WiFi</a>
+                  <a href="/generador/qr-google-reviews/">QR Google Reviews</a>
+                  <a href="/generador/qr-instagram/">QR Instagram</a>
+                  <a href="/generador/qr-enlace/">QR Enlace</a>
+                  <a href="/generador/qr-vcard/">QR vCard</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Redes sociales</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-instagram/">QR Instagram</a>
+                  <a href="/generador/qr-facebook/">QR Facebook</a>
+                  <a href="/generador/qr-tiktok/">QR TikTok</a>
+                  <a href="/generador/qr-twitter/">QR Twitter</a>
+                  <a href="/generador/qr-linkedin/">QR LinkedIn</a>
+                  <a href="/generador/qr-youtube/">QR YouTube</a>
+                  <a href="/generador/qr-spotify/">QR Spotify</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Contacto y comunicación</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-whatsapp/">QR WhatsApp</a>
+                  <a href="/generador/qr-telefono/">QR Teléfono</a>
+                  <a href="/generador/qr-gmail/">QR Gmail</a>
+                  <a href="/generador/qr-vcard/">QR vCard</a>
+                  <a href="/generador/qr-telegram/">QR Telegram</a>
+                  <a href="/generador/qr-zoom/">QR Zoom</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Negocio y marketing</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-google-reviews/">QR Google Reviews</a>
+                  <a href="/generador/qr-enlace/">QR Enlace</a>
+                  <a href="/generador/qr-google-forms/">QR Google Forms</a>
+                  <a href="/generador/qr-paypal/">QR PayPal</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Mapas y ubicación</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-google-maps/">QR Google Maps</a>
+                  <a href="/generador/qr-apple-maps/">QR Apple Maps</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Archivos y contenido</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-pdf/">QR PDF</a>
+                  <a href="/generador/qr-dropbox/">QR Dropbox</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Eventos</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-evento/">QR Evento</a>
+                  <a href="/generador/qr-entrada-evento/">QR Entrada evento</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Apps</span>
+                <div class="submenu-items">
+                  <a href="/generador/qr-app-store/">QR App Store</a>
+                  <a href="/generador/qr-google-play/">QR Google Play</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTORES -->
+          <div class="dropdown">
+            <a href="/sectores/" class="dropbtn">Sectores ▾</a>
+
+            <div class="dropdown-content">
+              <div class="submenu">
+                <span class="submenu-title">Hostelería</span>
+                <div class="submenu-items">
+                  <a href="/sectores/restaurantes/">Restaurantes</a>
+                  <a href="/sectores/bares/">Bares</a>
+                  <a href="/sectores/restaurantes-comida-rapida/"
+                    >Restaurantes de comida rápida</a
+                  >
+                  <a href="/sectores/pizzerias/">Pizzerías</a>
+                  <a href="/sectores/hamburgueserias/">Hamburgueserías</a>
+                  <a href="/sectores/food-trucks/">Food trucks</a>
+                  <a href="/sectores/discotecas/">Discotecas</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Turismo y ocio</span>
+                <div class="submenu-items">
+                  <a href="/sectores/hoteles/">Hoteles</a>
+                  <a href="/sectores/apartamentos-turisticos/"
+                    >Apartamentos turísticos</a
+                  >
+                  <a href="/sectores/hostales/">Hostales</a>
+                  <a href="/sectores/casas-rurales/">Casas rurales</a>
+                  <a href="/sectores/oficinas-turismo/">Oficinas de turismo</a>
+                  <a href="/sectores/guias-turisticos/">Guías turísticos</a>
+                  <a href="/sectores/rutas-turisticas/">Rutas turísticas</a>
+                  <a href="/sectores/museos/">Museos</a>
+                  <a href="/sectores/parques-tematicos/">Parques temáticos</a>
+                  <a href="/sectores/parques-naturales/">Parques naturales</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Salud y bienestar</span>
+                <div class="submenu-items">
+                  <a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+                  <a href="/sectores/centros-medicos/">Centros médicos</a>
+                  <a href="/sectores/fisioterapia/">Fisioterapia</a>
+                  <a href="/sectores/gimnasios/">Gimnasios</a>
+                  <a href="/sectores/psicologos/">Psicólogos</a>
+                  <a href="/sectores/nutricionistas/">Nutricionistas</a>
+                  <a href="/sectores/opticas/">Ópticas</a>
+                  <a href="/sectores/farmacias/">Farmacias</a>
+                  <a href="/sectores/veterinarias/">Veterinarias</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Belleza</span>
+                <div class="submenu-items">
+                  <a href="/sectores/peluquerias/">Peluquerías</a>
+                  <a href="/sectores/barberias/">Barberías</a>
+                  <a href="/sectores/centros-estetica/">Centros de estética</a>
+                  <a href="/sectores/salones-de-unas/">Salones de uñas</a>
+                  <a href="/sectores/spas/">Spas</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Educación y formación</span>
+                <div class="submenu-items">
+                  <a href="/sectores/academias/">Academias</a>
+                  <a href="/sectores/cursos-online/">Cursos online</a>
+                  <a href="/sectores/cursos-formacion/">Cursos de formación</a>
+                  <a href="/sectores/escuelas/">Escuelas</a>
+                  <a href="/sectores/universidades/">Universidades</a>
+                  <a href="/sectores/autoescuelas/">Autoescuelas</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Comercio</span>
+                <div class="submenu-items">
+                  <a href="/sectores/tiendas/">Tiendas</a>
+                  <a href="/sectores/supermercados/">Supermercados</a>
+                  <a href="/sectores/tiendas-ropa/">Tiendas de ropa</a>
+                  <a href="/sectores/floristerias/">Floristerías</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Servicios profesionales</span>
+                <div class="submenu-items">
+                  <a href="/sectores/inmobiliarias/">Inmobiliarias</a>
+                  <a href="/sectores/abogados/">Abogados</a>
+                  <a href="/sectores/asesorias/">Asesorías</a>
+                  <a href="/sectores/gestorias/">Gestorías</a>
+                  <a href="/sectores/notarias/">Notarías</a>
+                  <a href="/sectores/fabricas/">Fábricas</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Eventos</span>
+                <div class="submenu-items">
+                  <a href="/sectores/bodas/">Bodas</a>
+                  <a href="/sectores/festivales/">Festivales</a>
+                  <a href="/sectores/conciertos/">Conciertos</a>
+                  <a href="/sectores/organizadores-eventos/"
+                    >Organizadores de eventos</a
+                  >
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Automoción</span>
+                <div class="submenu-items">
+                  <a href="/sectores/talleres/">Talleres</a>
+                  <a href="/sectores/concesionarios/">Concesionarios</a>
+                  <a href="/sectores/alquiler-coches/">Alquiler de coches</a>
+                  <a href="/sectores/gasolineras/">Gasolineras</a>
+                </div>
+              </div>
+
+              <div class="submenu">
+                <span class="submenu-title">Transporte</span>
+                <div class="submenu-items">
+                  <a href="/sectores/aeropuertos/">Aeropuertos</a>
+                  <a href="/sectores/autobuses/">Autobuses</a>
+                  <a href="/sectores/estaciones-tren/">Estaciones de tren</a>
+                  <a href="/sectores/parkings/">Parkings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="/contacto/" class="nav-link">Contacto</a>
+        </nav>
       </div>
+    </header>
 
-      <!-- SECTORES -->
-      <div class="dropdown">
-        <a href="/sectores/" class="dropbtn">Sectores ▾</a>
-
-        <div class="dropdown-content">
-
-          <div class="submenu">
-            <span class="submenu-title">Hostelería</span>
-            <div class="submenu-items">
-              <a href="/sectores/restaurantes/">Restaurantes</a>
-              <a href="/sectores/bares/">Bares</a>
-              <a href="/sectores/restaurantes-comida-rapida/">Restaurantes de comida rápida</a>
-              <a href="/sectores/pizzerias/">Pizzerías</a>
-              <a href="/sectores/hamburgueserias/">Hamburgueserías</a>
-              <a href="/sectores/food-trucks/">Food trucks</a>
-              <a href="/sectores/discotecas/">Discotecas</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Turismo y ocio</span>
-            <div class="submenu-items">
-              <a href="/sectores/hoteles/">Hoteles</a>
-              <a href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
-              <a href="/sectores/hostales/">Hostales</a>
-              <a href="/sectores/casas-rurales/">Casas rurales</a>
-              <a href="/sectores/oficinas-turismo/">Oficinas de turismo</a>
-              <a href="/sectores/guias-turisticos/">Guías turísticos</a>
-              <a href="/sectores/rutas-turisticas/">Rutas turísticas</a>
-              <a href="/sectores/museos/">Museos</a>
-              <a href="/sectores/parques-tematicos/">Parques temáticos</a>
-              <a href="/sectores/parques-naturales/">Parques naturales</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Salud y bienestar</span>
-            <div class="submenu-items">
-              <a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
-              <a href="/sectores/centros-medicos/">Centros médicos</a>
-              <a href="/sectores/fisioterapia/">Fisioterapia</a>
-              <a href="/sectores/gimnasios/">Gimnasios</a>
-              <a href="/sectores/psicologos/">Psicólogos</a>
-              <a href="/sectores/nutricionistas/">Nutricionistas</a>
-              <a href="/sectores/opticas/">Ópticas</a>
-              <a href="/sectores/farmacias/">Farmacias</a>
-              <a href="/sectores/veterinarias/">Veterinarias</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Belleza</span>
-            <div class="submenu-items">
-              <a href="/sectores/peluquerias/">Peluquerías</a>
-              <a href="/sectores/barberias/">Barberías</a>
-              <a href="/sectores/centros-estetica/">Centros de estética</a>
-              <a href="/sectores/salones-de-unas/">Salones de uñas</a>
-              <a href="/sectores/spas/">Spas</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Educación y formación</span>
-            <div class="submenu-items">
-              <a href="/sectores/academias/">Academias</a>
-              <a href="/sectores/cursos-online/">Cursos online</a>
-              <a href="/sectores/cursos-formacion/">Cursos de formación</a>
-              <a href="/sectores/escuelas/">Escuelas</a>
-              <a href="/sectores/universidades/">Universidades</a>
-              <a href="/sectores/autoescuelas/">Autoescuelas</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Comercio</span>
-            <div class="submenu-items">
-              <a href="/sectores/tiendas/">Tiendas</a>
-              <a href="/sectores/supermercados/">Supermercados</a>
-              <a href="/sectores/tiendas-ropa/">Tiendas de ropa</a>
-              <a href="/sectores/floristerias/">Floristerías</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Servicios profesionales</span>
-            <div class="submenu-items">
-              <a href="/sectores/inmobiliarias/">Inmobiliarias</a>
-              <a href="/sectores/abogados/">Abogados</a>
-              <a href="/sectores/asesorias/">Asesorías</a>
-              <a href="/sectores/gestorias/">Gestorías</a>
-              <a href="/sectores/notarias/">Notarías</a>
-              <a href="/sectores/fabricas/">Fábricas</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Eventos</span>
-            <div class="submenu-items">
-              <a href="/sectores/bodas/">Bodas</a>
-              <a href="/sectores/festivales/">Festivales</a>
-              <a href="/sectores/conciertos/">Conciertos</a>
-              <a href="/sectores/organizadores-eventos/">Organizadores de eventos</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Automoción</span>
-            <div class="submenu-items">
-              <a href="/sectores/talleres/">Talleres</a>
-              <a href="/sectores/concesionarios/">Concesionarios</a>
-              <a href="/sectores/alquiler-coches/">Alquiler de coches</a>
-              <a href="/sectores/gasolineras/">Gasolineras</a>
-            </div>
-          </div>
-
-          <div class="submenu">
-            <span class="submenu-title">Transporte</span>
-            <div class="submenu-items">
-              <a href="/sectores/aeropuertos/">Aeropuertos</a>
-              <a href="/sectores/autobuses/">Autobuses</a>
-              <a href="/sectores/estaciones-tren/">Estaciones de tren</a>
-              <a href="/sectores/parkings/">Parkings</a>
-            </div>
-          </div>
-
-        </div>
+    <div class="breadcrumb-wrapper">
+      <div class="breadcrumb">
+        <a href="/">Inicio</a> › <a href="/sectores/">Sectores</a> ›
+        Restaurantes
       </div>
-
-      <a href="/contacto/" class="nav-link">Contacto</a>
-
-    </nav>
-  </div>
-</header>
-  
-<div class="breadcrumb-wrapper">
-  <div class="breadcrumb">
-    <a href="/">Inicio</a> › 
-    <a href="/sectores/">Sectores</a> › 
-    Restaurantes
-  </div>
-</div>
-  
-<main class="container">
-
-	<!-- HERO -->
-	<section class="hero">
-		<h1>Códigos QR para Restaurantes</h1>
-		<p class="subtitle">
-			Digitaliza tu restaurante con códigos QR para carta digital, reservas,
-			reseñas de Google, redes sociales y acceso WiFi para clientes.
-			Mejora la experiencia del comensal y simplifica la gestión del negocio.
-		</p>
-	</section>
-
-
-
-	<!-- QR POPULARES -->
-	<section class="solutions-block">
-
-		<h2>Códigos QR más útiles para restaurantes</h2>
-
-		<p>
-			Los restaurantes utilizan códigos QR para ofrecer menús digitales,
-			facilitar reservas y mejorar la comunicación con los clientes.
-			Estos son algunos de los códigos QR más utilizados en bares,
-			cafeterías y restaurantes.
-		</p>
-
-		<div class="cards">
-
-			<a class="card" href="/generador/qr-pdf/">
-				<h3>QR para Carta Digital</h3>
-				<p>Permite mostrar el menú del restaurante desde el móvil.</p>
-			</a>
-
-			<a class="card" href="/generador/qr-whatsapp/">
-				<h3>QR para Reservas por WhatsApp</h3>
-				<p>Facilita que los clientes reserven mesa rápidamente.</p>
-			</a>
-
-			<a class="card" href="/generador/qr-google-reviews/">
-				<h3>QR para Reseñas</h3>
-				<p>Invita a los clientes a dejar valoraciones en Google.</p>
-			</a>
-
-			<a class="card" href="/generador/qr-wifi/">
-				<h3>QR para WiFi</h3>
-				<p>Permite que los clientes se conecten automáticamente a la red.</p>
-			</a>
-
-			<a class="card" href="/generador/qr-instagram/">
-				<h3>QR para Instagram</h3>
-				<p>Promociona el restaurante y aumenta seguidores.</p>
-			</a>
-
-			<a class="card" href="/generador/qr-google-maps/">
-				<h3>QR para Ubicación</h3>
-				<p>Facilita que los clientes encuentren el restaurante.</p>
-			</a>
-
-		</div>
-
-	</section>
-
-
-
-	<!-- PROBLEMA -->
-	<section class="info">
-
-		<h2>Por qué los restaurantes utilizan códigos QR</h2>
-
-		<p>
-			El uso de códigos QR en restaurantes se ha convertido en una solución
-			práctica para ofrecer información digital a los clientes sin necesidad
-			de imprimir menús físicos.
-		</p>
-
-		<p>
-			Los códigos QR permiten mostrar cartas digitales, facilitar reservas
-			y dirigir a los clientes a reseñas o redes sociales con un simple escaneo
-			desde el móvil.
-		</p>
-
-		<p>
-			Esto resulta especialmente útil en bares, cafeterías, terrazas
-			y restaurantes con alta rotación de clientes.
-		</p>
-
-	</section>
-
-
-
-	<!-- BENEFICIOS -->
-	<section class="info">
-
-		<h2>Ventajas de usar códigos QR en restaurantes</h2>
-
-		<ul>
-			<li>Reducción de costes de impresión de menús.</li>
-			<li>Actualización inmediata de precios y platos.</li>
-			<li>Mayor higiene al evitar cartas físicas.</li>
-			<li>Acceso rápido desde cualquier smartphone.</li>
-			<li>Mejora de la experiencia del cliente.</li>
-			<li>Mayor número de reseñas y presencia online.</li>
-		</ul>
-
-	</section>
-
-
-
-	<!-- CASOS DE USO -->
-	<section class="info">
-
-		<h2>Usos prácticos de los códigos QR en restaurantes</h2>
-
-		<h3>QR para menú digital en mesa</h3>
-		<p>
-			Un <a href="/generador/qr-pdf/">QR para carta digital</a>
-			colocado en cada mesa permite que los clientes consulten
-			el menú desde su smartphone.
-		</p>
-
-		<h3>QR en escaparate o entrada</h3>
-		<p>
-			Colocar un código QR en la entrada del restaurante permite
-			que los clientes consulten el menú antes de entrar.
-		</p>
-
-		<h3>Reservas mediante WhatsApp</h3>
-		<p>
-			Muchos restaurantes utilizan un
-			<a href="/generador/qr-whatsapp/">QR para WhatsApp</a>
-			para gestionar reservas de forma rápida.
-		</p>
-
-		<h3>Promoción en redes sociales</h3>
-		<p>
-			Un <a href="/generador/qr-instagram/">QR para Instagram</a>
-			permite conectar el restaurante con su comunidad online.
-		</p>
-
-	</section>
-
-	<section class="info">
-	
-		<h2>Dónde colocar los códigos QR en un restaurante</h2>
-	
-		<p>
-			La ubicación del código QR es clave para que los clientes lo utilicen.
-			Colocar los códigos en lugares visibles aumenta la interacción
-			y facilita el acceso a información digital.
-		</p>
-	
-		<h3>QR en las mesas</h3>
-		<p>
-			Es la ubicación más habitual para cartas digitales.
-			Los clientes pueden escanear el código QR para consultar el menú
-			sin necesidad de cartas físicas.
-		</p>
-	
-		<h3>QR en el escaparate</h3>
-		<p>
-			Permite que los clientes consulten el menú o promociones
-			antes de entrar al restaurante.
-		</p>
-	
-		<h3>QR en el ticket o factura</h3>
-		<p>
-			Algunos restaurantes incluyen un código QR en el ticket
-			que dirige a la página de reseñas de Google.
-		</p>
-	
-		<h3>QR en redes sociales o publicidad</h3>
-		<p>
-			También pueden utilizarse en flyers, carteles o campañas
-			publicitarias para dirigir tráfico a redes sociales o reservas.
-		</p>
-	
-	</section>
-
-	<!-- SEO FUERTE -->
-	<section class="info">
-
-		<h2>Cómo implementar códigos QR en tu restaurante</h2>
-
-		<p>
-			Implementar códigos QR en un restaurante es un proceso sencillo
-			y puede mejorar la experiencia del cliente.
-		</p>
-
-		<ol>
-			<li>Sube tu carta digital a internet.</li>
-			<li>Copia el enlace público.</li>
-			<li>Genera el código QR correspondiente.</li>
-			<li>Colócalo en mesas, escaparate o material promocional.</li>
-		</ol>
-
-		<p>
-			De esta forma los clientes podrán acceder al menú o a los
-			servicios del restaurante desde su móvil.
-		</p>
-
-	</section>
-
-
-
-	<!-- FAQ -->
-	<section class="info">
-
-		<h2>Preguntas frecuentes sobre códigos QR para restaurantes</h2>
-
-		<h3>¿Es gratis crear un código QR para mi restaurante?</h3>
-		<p>
-			Sí, puedes generar códigos QR gratuitos y utilizarlos
-			en cualquier soporte físico o digital.
-		</p>
-
-		<h3>¿Necesito una web para tener carta digital?</h3>
-		<p>
-			No necesariamente. Puedes utilizar un PDF o cualquier
-			enlace online para generar el código QR.
-		</p>
-
-		<h3>¿Funcionan en todos los móviles?</h3>
-		<p>
-			Sí. Los smartphones actuales pueden escanear códigos QR
-			directamente desde la cámara.
-		</p>
-
-	</section>
-
-
-
-	<footer class="footer">
-		<a href="/legal/privacidad/">Privacidad</a> |
-		<a href="/legal/aviso-legal/">Aviso Legal</a> |
-		<a href="/legal/cookies/">Cookies</a> |
-		<a href="/contacto/">Contacto</a>
-	</footer>
-
-</main>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script src="/assets/js/script.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "¿Es gratis crear un código QR para mi restaurante?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Sí, puedes generar un código QR para tu restaurante de forma gratuita y utilizarlo tantas veces como necesites."
-    }
-  },{
-    "@type": "Question",
-    "name": "¿Necesito una web para tener una carta digital?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "No necesariamente. Puedes subir tu menú en PDF a una plataforma online y generar el código QR a partir de ese enlace."
-    }
-  },{
-    "@type": "Question",
-    "name": "¿Funciona el código QR en todos los móviles?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Sí, los códigos QR son compatibles con Android e iPhone sin necesidad de aplicaciones adicionales."
-    }
-  }]
-}
-</script>
-
-<!-- MOBILE MENU -->
-<div id="mobile-menu" class="mobile-menu">
-
-  <!-- PANEL PRINCIPAL -->
-  <div class="mobile-panel panel-main active">
-    <div class="mobile-header">
-      <span>Menú</span>
-      <button class="close-menu" type="button">✕</button>
     </div>
 
-    <button class="mobile-link has-next" type="button" data-target="panel-generadores">
-      Generadores
-    </button>
+    <main class="container">
+      <!-- HERO -->
+      <section class="hero">
+        <h1>Códigos QR para Restaurantes</h1>
+        <p class="subtitle">
+          Digitaliza tu restaurante con códigos QR para carta digital, reservas,
+          reseñas de Google, redes sociales y acceso WiFi para clientes. Mejora
+          la experiencia del comensal y simplifica la gestión del negocio.
+        </p>
+      </section>
 
-    <button class="mobile-link has-next" type="button" data-target="panel-sectores">
-      Sectores
-    </button>
+      <!-- QR POPULARES -->
+      <section class="solutions-block">
+        <h2>Códigos QR más útiles para restaurantes</h2>
 
-    <a class="mobile-link" href="/contacto/">Contacto</a>
-  </div>
+        <p>
+          Los restaurantes utilizan códigos QR para ofrecer menús digitales,
+          facilitar reservas y mejorar la comunicación con los clientes. Estos
+          son algunos de los códigos QR más utilizados en bares, cafeterías y
+          restaurantes.
+        </p>
 
-  <!-- PANEL GENERADORES -->
+        <div class="cards">
+          <a class="card" href="/generador/qr-pdf/">
+            <h3>QR para Carta Digital</h3>
+            <p>Permite mostrar el menú del restaurante desde el móvil.</p>
+          </a>
 
-	<div class="mobile-panel panel-generadores">
-	
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-main">←</button>
-	    <span>Generadores</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/">Ver todos los generadores</a>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-populares">
-	    Más populares
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-redes">
-	    Redes sociales
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-contacto">
-	    Contacto y comunicación
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-negocio">
-	    Negocio y marketing
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-mapas">
-	    Mapas y ubicación
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-archivos">
-	    Archivos y contenido
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-eventos">
-	    Eventos
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-gen-apps">
-	    Apps
-	  </button>
-	
-	</div>
-	
-	<!-- SUBPANEL MÁS POPULARES -->
-	<div class="mobile-panel panel-gen-populares">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Más populares</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-whatsapp/">QR WhatsApp</a>
-	  <a class="mobile-link" href="/generador/qr-wifi/">QR WiFi</a>
-	  <a class="mobile-link" href="/generador/qr-google-reviews/">QR Google Reviews</a>
-	  <a class="mobile-link" href="/generador/qr-instagram/">QR Instagram</a>
-	  <a class="mobile-link" href="/generador/qr-enlace/">QR Enlace</a>
-	  <a class="mobile-link" href="/generador/qr-vcard/">QR vCard</a>
-	</div>
-	
-	<!-- SUBPANEL REDES SOCIALES -->
-	<div class="mobile-panel panel-gen-redes">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Redes sociales</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-instagram/">QR Instagram</a>
-	  <a class="mobile-link" href="/generador/qr-facebook/">QR Facebook</a>
-	  <a class="mobile-link" href="/generador/qr-tiktok/">QR TikTok</a>
-	  <a class="mobile-link" href="/generador/qr-twitter/">QR Twitter</a>
-	  <a class="mobile-link" href="/generador/qr-linkedin/">QR LinkedIn</a>
-	  <a class="mobile-link" href="/generador/qr-youtube/">QR YouTube</a>
-	  <a class="mobile-link" href="/generador/qr-spotify/">QR Spotify</a>
-	</div>
-	
-	<!-- SUBPANEL CONTACTO Y COMUNICACIÓN -->
-	<div class="mobile-panel panel-gen-contacto">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Contacto y comunicación</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-whatsapp/">QR WhatsApp</a>
-	  <a class="mobile-link" href="/generador/qr-telefono/">QR Teléfono</a>
-	  <a class="mobile-link" href="/generador/qr-gmail/">QR Gmail</a>
-	  <a class="mobile-link" href="/generador/qr-vcard/">QR vCard</a>
-	  <a class="mobile-link" href="/generador/qr-telegram/">QR Telegram</a>
-	  <a class="mobile-link" href="/generador/qr-zoom/">QR Zoom</a>
-	</div>
-	
-	<!-- SUBPANEL NEGOCIO Y MARKETING -->
-	<div class="mobile-panel panel-gen-negocio">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Negocio y marketing</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-google-reviews/">QR Google Reviews</a>
-	  <a class="mobile-link" href="/generador/qr-google-forms/">QR Google Forms</a>
-	  <a class="mobile-link" href="/generador/qr-paypal/">QR PayPal</a>
-	  <a class="mobile-link" href="/generador/qr-enlace/">QR Enlace</a>
-	</div>
-	
-	<!-- SUBPANEL MAPAS Y UBICACIÓN -->
-	<div class="mobile-panel panel-gen-mapas">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Mapas y ubicación</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-google-maps/">QR Google Maps</a>
-	  <a class="mobile-link" href="/generador/qr-apple-maps/">QR Apple Maps</a>
-	</div>
-	
-	<!-- SUBPANEL ARCHIVOS Y CONTENIDO -->
-	<div class="mobile-panel panel-gen-archivos">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Archivos y contenido</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-pdf/">QR PDF</a>
-	  <a class="mobile-link" href="/generador/qr-dropbox/">QR Dropbox</a>
-	</div>
-	
-	<!-- SUBPANEL EVENTOS -->
-	<div class="mobile-panel panel-gen-eventos">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Eventos</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-evento/">QR Evento</a>
-	  <a class="mobile-link" href="/generador/qr-entrada-evento/">QR Entrada de evento</a>
-	</div>
-	
-	<!-- SUBPANEL APPS -->
-	<div class="mobile-panel panel-gen-apps">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-generadores">←</button>
-	    <span>Apps</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/generador/qr-app-store/">QR App Store</a>
-	  <a class="mobile-link" href="/generador/qr-google-play/">QR Google Play</a>
-	</div>
+          <a class="card" href="/generador/qr-whatsapp/">
+            <h3>QR para Reservas por WhatsApp</h3>
+            <p>Facilita que los clientes reserven mesa rápidamente.</p>
+          </a>
 
-  	<!-- PANEL SECTORES -->
-	<div class="mobile-panel panel-sectores">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-main">←</button>
-	    <span>Sectores</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/">Ver todos los sectores</a>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-hosteleria">
-	    Hostelería
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-turismo">
-	    Turismo y ocio
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-salud">
-	    Salud y bienestar
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-belleza">
-	    Belleza
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-educacion">
-	    Educación y formación
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-comercio">
-	    Comercio
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-servicios">
-	    Servicios profesionales
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-eventos">
-	    Eventos
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-automocion">
-	    Automoción
-	  </button>
-	
-	  <button class="mobile-link has-next" type="button" data-target="panel-sec-transporte">
-	    Transporte
-	  </button>
-	</div>
-	
-	<!-- SUBPANEL HOSTELERÍA -->
-	<div class="mobile-panel panel-sec-hosteleria">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Hostelería</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/restaurantes/">Restaurantes</a>
-	  <a class="mobile-link" href="/sectores/bares/">Bares</a>
-	  <a class="mobile-link" href="/sectores/pizzerias/">Pizzerías</a>
-	  <a class="mobile-link" href="/sectores/hamburgueserias/">Hamburgueserías</a>
-	  <a class="mobile-link" href="/sectores/food-trucks/">Food trucks</a>
-	</div>
-	
-	<!-- SUBPANEL TURISMO Y OCIO -->
-	<div class="mobile-panel panel-sec-turismo">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Turismo y ocio</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/hoteles/">Hoteles</a>
-	  <a class="mobile-link" href="/sectores/apartamentos-turisticos/">Apartamentos turísticos</a>
-	  <a class="mobile-link" href="/sectores/hostales/">Hostales</a>
-	  <a class="mobile-link" href="/sectores/casas-rurales/">Casas rurales</a>
-	  <a class="mobile-link" href="/sectores/oficinas-turismo/">Oficinas de turismo</a>
-	  <a class="mobile-link" href="/sectores/guias-turisticos/">Guías turísticos</a>
-	  <a class="mobile-link" href="/sectores/museos/">Museos</a>
-	</div>
-	
-	<!-- SUBPANEL SALUD Y BIENESTAR -->
-	<div class="mobile-panel panel-sec-salud">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Salud y bienestar</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/clinicas-dentales/">Clínicas dentales</a>
-	  <a class="mobile-link" href="/sectores/centros-medicos/">Centros médicos</a>
-	  <a class="mobile-link" href="/sectores/fisioterapia/">Fisioterapia</a>
-	  <a class="mobile-link" href="/sectores/gimnasios/">Gimnasios</a>
-	  <a class="mobile-link" href="/sectores/psicologos/">Psicólogos</a>
-	  <a class="mobile-link" href="/sectores/nutricionistas/">Nutricionistas</a>
-	  <a class="mobile-link" href="/sectores/opticas/">Ópticas</a>
-	  <a class="mobile-link" href="/sectores/farmacias/">Farmacias</a>
-	  <a class="mobile-link" href="/sectores/veterinarias/">Veterinarias</a>
-	</div>
-	
-	<!-- SUBPANEL BELLEZA -->
-	<div class="mobile-panel panel-sec-belleza">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Belleza</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/peluquerias/">Peluquerías</a>
-	  <a class="mobile-link" href="/sectores/barberias/">Barberías</a>
-	  <a class="mobile-link" href="/sectores/centros-estetica/">Centros de estética</a>
-	  <a class="mobile-link" href="/sectores/salones-de-unas/">Salones de uñas</a>
-	  <a class="mobile-link" href="/sectores/spas/">Spas</a>
-	</div>
-	
-	<!-- SUBPANEL EDUCACIÓN Y FORMACIÓN -->
-	<div class="mobile-panel panel-sec-educacion">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Educación y formación</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/academias/">Academias</a>
-	  <a class="mobile-link" href="/sectores/cursos-online/">Cursos online</a>
-	  <a class="mobile-link" href="/sectores/escuelas/">Escuelas</a>
-	  <a class="mobile-link" href="/sectores/universidades/">Universidades</a>
-	  <a class="mobile-link" href="/sectores/autoescuelas/">Autoescuelas</a>
-	</div>
-	
-	<!-- SUBPANEL COMERCIO -->
-	<div class="mobile-panel panel-sec-comercio">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Comercio</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/tiendas/">Tiendas</a>
-	  <a class="mobile-link" href="/sectores/supermercados/">Supermercados</a>
-	  <a class="mobile-link" href="/sectores/tiendas-ropa/">Tiendas de ropa</a>
-	  <a class="mobile-link" href="/sectores/floristerias/">Floristerías</a>
-	</div>
-	
-	<!-- SUBPANEL SERVICIOS PROFESIONALES -->
-	<div class="mobile-panel panel-sec-servicios">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Servicios profesionales</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/inmobiliarias/">Inmobiliarias</a>
-	  <a class="mobile-link" href="/sectores/abogados/">Abogados</a>
-	  <a class="mobile-link" href="/sectores/asesorias/">Asesorías</a>
-	  <a class="mobile-link" href="/sectores/gestorias/">Gestorías</a>
-	  <a class="mobile-link" href="/sectores/notarias/">Notarías</a>
-	  <a class="mobile-link" href="/sectores/fabricas/">Fábricas</a>
-	</div>
-	
-	<!-- SUBPANEL EVENTOS -->
-	<div class="mobile-panel panel-sec-eventos">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Eventos</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/bodas/">Bodas</a>
-	  <a class="mobile-link" href="/sectores/festivales/">Festivales</a>
-	  <a class="mobile-link" href="/sectores/conciertos/">Conciertos</a>
-	  <a class="mobile-link" href="/sectores/organizadores-eventos/">Organizadores de eventos</a>
-	</div>
-	
-	<!-- SUBPANEL AUTOMOCIÓN -->
-	<div class="mobile-panel panel-sec-automocion">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Automoción</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/talleres/">Talleres</a>
-	  <a class="mobile-link" href="/sectores/concesionarios/">Concesionarios</a>
-	  <a class="mobile-link" href="/sectores/alquiler-coches/">Alquiler de coches</a>
-	  <a class="mobile-link" href="/sectores/gasolineras/">Gasolineras</a>
-	</div>
-	
-	<!-- SUBPANEL TRANSPORTE -->
-	<div class="mobile-panel panel-sec-transporte">
-	  <div class="mobile-header">
-	    <button class="back" type="button" data-back="panel-sectores">←</button>
-	    <span>Transporte</span>
-	  </div>
-	
-	  <a class="mobile-link" href="/sectores/aeropuertos/">Aeropuertos</a>
-	  <a class="mobile-link" href="/sectores/autobuses/">Autobuses</a>
-	  <a class="mobile-link" href="/sectores/estaciones-tren/">Estaciones de tren</a>
-	  <a class="mobile-link" href="/sectores/parkings/">Parkings</a>
-	</div>
+          <a class="card" href="/generador/qr-google-reviews/">
+            <h3>QR para Reseñas</h3>
+            <p>Invita a los clientes a dejar valoraciones en Google.</p>
+          </a>
 
-</div>
+          <a class="card" href="/generador/qr-wifi/">
+            <h3>QR para WiFi</h3>
+            <p>
+              Permite que los clientes se conecten automáticamente a la red.
+            </p>
+          </a>
 
-<script src="/assets/js/mobile-menu.js"></script>
+          <a class="card" href="/generador/qr-instagram/">
+            <h3>QR para Instagram</h3>
+            <p>Promociona el restaurante y aumenta seguidores.</p>
+          </a>
 
-</body>
+          <a class="card" href="/generador/qr-google-maps/">
+            <h3>QR para Ubicación</h3>
+            <p>Facilita que los clientes encuentren el restaurante.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- PROBLEMA -->
+      <section class="info">
+        <h2>Por qué los restaurantes utilizan códigos QR</h2>
+
+        <p>
+          El uso de códigos QR en restaurantes se ha convertido en una solución
+          práctica para ofrecer información digital a los clientes sin necesidad
+          de imprimir menús físicos.
+        </p>
+
+        <p>
+          Los códigos QR permiten mostrar cartas digitales, facilitar reservas y
+          dirigir a los clientes a reseñas o redes sociales con un simple
+          escaneo desde el móvil.
+        </p>
+
+        <p>
+          Esto resulta especialmente útil en bares, cafeterías, terrazas y
+          restaurantes con alta rotación de clientes.
+        </p>
+      </section>
+
+      <!-- BENEFICIOS -->
+      <section class="info">
+        <h2>Ventajas de usar códigos QR en restaurantes</h2>
+
+        <ul>
+          <li>Reducción de costes de impresión de menús.</li>
+          <li>Actualización inmediata de precios y platos.</li>
+          <li>Mayor higiene al evitar cartas físicas.</li>
+          <li>Acceso rápido desde cualquier smartphone.</li>
+          <li>Mejora de la experiencia del cliente.</li>
+          <li>Mayor número de reseñas y presencia online.</li>
+        </ul>
+      </section>
+
+      <!-- CASOS DE USO -->
+      <section class="info">
+        <h2>Usos prácticos de los códigos QR en restaurantes</h2>
+
+        <h3>QR para menú digital en mesa</h3>
+        <p>
+          Un <a href="/generador/qr-pdf/">QR para carta digital</a>
+          colocado en cada mesa permite que los clientes consulten el menú desde
+          su smartphone.
+        </p>
+
+        <h3>QR en escaparate o entrada</h3>
+        <p>
+          Colocar un código QR en la entrada del restaurante permite que los
+          clientes consulten el menú antes de entrar.
+        </p>
+
+        <h3>Reservas mediante WhatsApp</h3>
+        <p>
+          Muchos restaurantes utilizan un
+          <a href="/generador/qr-whatsapp/">QR para WhatsApp</a>
+          para gestionar reservas de forma rápida.
+        </p>
+
+        <h3>Promoción en redes sociales</h3>
+        <p>
+          Un <a href="/generador/qr-instagram/">QR para Instagram</a>
+          permite conectar el restaurante con su comunidad online.
+        </p>
+      </section>
+
+      <section class="info">
+        <h2>Dónde colocar los códigos QR en un restaurante</h2>
+
+        <p>
+          La ubicación del código QR es clave para que los clientes lo utilicen.
+          Colocar los códigos en lugares visibles aumenta la interacción y
+          facilita el acceso a información digital.
+        </p>
+
+        <h3>QR en las mesas</h3>
+        <p>
+          Es la ubicación más habitual para cartas digitales. Los clientes
+          pueden escanear el código QR para consultar el menú sin necesidad de
+          cartas físicas.
+        </p>
+
+        <h3>QR en el escaparate</h3>
+        <p>
+          Permite que los clientes consulten el menú o promociones antes de
+          entrar al restaurante.
+        </p>
+
+        <h3>QR en el ticket o factura</h3>
+        <p>
+          Algunos restaurantes incluyen un código QR en el ticket que dirige a
+          la página de reseñas de Google.
+        </p>
+
+        <h3>QR en redes sociales o publicidad</h3>
+        <p>
+          También pueden utilizarse en flyers, carteles o campañas publicitarias
+          para dirigir tráfico a redes sociales o reservas.
+        </p>
+      </section>
+
+      <!-- SEO FUERTE -->
+      <section class="info">
+        <h2>Cómo implementar códigos QR en tu restaurante</h2>
+
+        <p>
+          Implementar códigos QR en un restaurante es un proceso sencillo y
+          puede mejorar la experiencia del cliente.
+        </p>
+
+        <ol>
+          <li>Sube tu carta digital a internet.</li>
+          <li>Copia el enlace público.</li>
+          <li>Genera el código QR correspondiente.</li>
+          <li>Colócalo en mesas, escaparate o material promocional.</li>
+        </ol>
+
+        <p>
+          De esta forma los clientes podrán acceder al menú o a los servicios
+          del restaurante desde su móvil.
+        </p>
+      </section>
+
+      <!-- FAQ -->
+      <section class="info">
+        <h2>Preguntas frecuentes sobre códigos QR para restaurantes</h2>
+
+        <h3>¿Es gratis crear un código QR para mi restaurante?</h3>
+        <p>
+          Sí, puedes generar códigos QR gratuitos y utilizarlos en cualquier
+          soporte físico o digital.
+        </p>
+
+        <h3>¿Necesito una web para tener carta digital?</h3>
+        <p>
+          No necesariamente. Puedes utilizar un PDF o cualquier enlace online
+          para generar el código QR.
+        </p>
+
+        <h3>¿Funcionan en todos los móviles?</h3>
+        <p>
+          Sí. Los smartphones actuales pueden escanear códigos QR directamente
+          desde la cámara.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <a href="/legal/privacidad/">Privacidad</a> |
+        <a href="/legal/aviso-legal/">Aviso Legal</a> |
+        <a href="/legal/cookies/">Cookies</a> |
+        <a href="/contacto/">Contacto</a>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Es gratis crear un código QR para mi restaurante?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, puedes generar un código QR para tu restaurante de forma gratuita y utilizarlo tantas veces como necesites."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito una web para tener una carta digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No necesariamente. Puedes subir tu menú en PDF a una plataforma online y generar el código QR a partir de ese enlace."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Funciona el código QR en todos los móviles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, los códigos QR son compatibles con Android e iPhone sin necesidad de aplicaciones adicionales."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="mobile-menu">
+      <!-- PANEL PRINCIPAL -->
+      <div class="mobile-panel panel-main active">
+        <div class="mobile-header">
+          <span>Menú</span>
+          <button class="close-menu" type="button">✕</button>
+        </div>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-generadores"
+        >
+          Generadores
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sectores"
+        >
+          Sectores
+        </button>
+
+        <a class="mobile-link" href="/contacto/">Contacto</a>
+      </div>
+
+      <!-- PANEL GENERADORES -->
+
+      <div class="mobile-panel panel-generadores">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-main">←</button>
+          <span>Generadores</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/">Ver todos los generadores</a>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-populares"
+        >
+          Más populares
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-redes"
+        >
+          Redes sociales
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-contacto"
+        >
+          Contacto y comunicación
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-negocio"
+        >
+          Negocio y marketing
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-mapas"
+        >
+          Mapas y ubicación
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-archivos"
+        >
+          Archivos y contenido
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-eventos"
+        >
+          Eventos
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-gen-apps"
+        >
+          Apps
+        </button>
+      </div>
+
+      <!-- SUBPANEL MÁS POPULARES -->
+      <div class="mobile-panel panel-gen-populares">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Más populares</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-whatsapp/">QR WhatsApp</a>
+        <a class="mobile-link" href="/generador/qr-wifi/">QR WiFi</a>
+        <a class="mobile-link" href="/generador/qr-google-reviews/"
+          >QR Google Reviews</a
+        >
+        <a class="mobile-link" href="/generador/qr-instagram/">QR Instagram</a>
+        <a class="mobile-link" href="/generador/qr-enlace/">QR Enlace</a>
+        <a class="mobile-link" href="/generador/qr-vcard/">QR vCard</a>
+      </div>
+
+      <!-- SUBPANEL REDES SOCIALES -->
+      <div class="mobile-panel panel-gen-redes">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Redes sociales</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-instagram/">QR Instagram</a>
+        <a class="mobile-link" href="/generador/qr-facebook/">QR Facebook</a>
+        <a class="mobile-link" href="/generador/qr-tiktok/">QR TikTok</a>
+        <a class="mobile-link" href="/generador/qr-twitter/">QR Twitter</a>
+        <a class="mobile-link" href="/generador/qr-linkedin/">QR LinkedIn</a>
+        <a class="mobile-link" href="/generador/qr-youtube/">QR YouTube</a>
+        <a class="mobile-link" href="/generador/qr-spotify/">QR Spotify</a>
+      </div>
+
+      <!-- SUBPANEL CONTACTO Y COMUNICACIÓN -->
+      <div class="mobile-panel panel-gen-contacto">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Contacto y comunicación</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-whatsapp/">QR WhatsApp</a>
+        <a class="mobile-link" href="/generador/qr-telefono/">QR Teléfono</a>
+        <a class="mobile-link" href="/generador/qr-gmail/">QR Gmail</a>
+        <a class="mobile-link" href="/generador/qr-vcard/">QR vCard</a>
+        <a class="mobile-link" href="/generador/qr-telegram/">QR Telegram</a>
+        <a class="mobile-link" href="/generador/qr-zoom/">QR Zoom</a>
+      </div>
+
+      <!-- SUBPANEL NEGOCIO Y MARKETING -->
+      <div class="mobile-panel panel-gen-negocio">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Negocio y marketing</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-google-reviews/"
+          >QR Google Reviews</a
+        >
+        <a class="mobile-link" href="/generador/qr-google-forms/"
+          >QR Google Forms</a
+        >
+        <a class="mobile-link" href="/generador/qr-paypal/">QR PayPal</a>
+        <a class="mobile-link" href="/generador/qr-enlace/">QR Enlace</a>
+      </div>
+
+      <!-- SUBPANEL MAPAS Y UBICACIÓN -->
+      <div class="mobile-panel panel-gen-mapas">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Mapas y ubicación</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-google-maps/"
+          >QR Google Maps</a
+        >
+        <a class="mobile-link" href="/generador/qr-apple-maps/"
+          >QR Apple Maps</a
+        >
+      </div>
+
+      <!-- SUBPANEL ARCHIVOS Y CONTENIDO -->
+      <div class="mobile-panel panel-gen-archivos">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Archivos y contenido</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-pdf/">QR PDF</a>
+        <a class="mobile-link" href="/generador/qr-dropbox/">QR Dropbox</a>
+      </div>
+
+      <!-- SUBPANEL EVENTOS -->
+      <div class="mobile-panel panel-gen-eventos">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Eventos</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-evento/">QR Evento</a>
+        <a class="mobile-link" href="/generador/qr-entrada-evento/"
+          >QR Entrada de evento</a
+        >
+      </div>
+
+      <!-- SUBPANEL APPS -->
+      <div class="mobile-panel panel-gen-apps">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-generadores">
+            ←
+          </button>
+          <span>Apps</span>
+        </div>
+
+        <a class="mobile-link" href="/generador/qr-app-store/">QR App Store</a>
+        <a class="mobile-link" href="/generador/qr-google-play/"
+          >QR Google Play</a
+        >
+      </div>
+
+      <!-- PANEL SECTORES -->
+      <div class="mobile-panel panel-sectores">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-main">←</button>
+          <span>Sectores</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/">Ver todos los sectores</a>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-hosteleria"
+        >
+          Hostelería
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-turismo"
+        >
+          Turismo y ocio
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-salud"
+        >
+          Salud y bienestar
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-belleza"
+        >
+          Belleza
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-educacion"
+        >
+          Educación y formación
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-comercio"
+        >
+          Comercio
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-servicios"
+        >
+          Servicios profesionales
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-eventos"
+        >
+          Eventos
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-automocion"
+        >
+          Automoción
+        </button>
+
+        <button
+          class="mobile-link has-next"
+          type="button"
+          data-target="panel-sec-transporte"
+        >
+          Transporte
+        </button>
+      </div>
+
+      <!-- SUBPANEL HOSTELERÍA -->
+      <div class="mobile-panel panel-sec-hosteleria">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Hostelería</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/restaurantes/">Restaurantes</a>
+        <a class="mobile-link" href="/sectores/bares/">Bares</a>
+        <a class="mobile-link" href="/sectores/pizzerias/">Pizzerías</a>
+        <a class="mobile-link" href="/sectores/hamburgueserias/"
+          >Hamburgueserías</a
+        >
+        <a class="mobile-link" href="/sectores/food-trucks/">Food trucks</a>
+      </div>
+
+      <!-- SUBPANEL TURISMO Y OCIO -->
+      <div class="mobile-panel panel-sec-turismo">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Turismo y ocio</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/hoteles/">Hoteles</a>
+        <a class="mobile-link" href="/sectores/apartamentos-turisticos/"
+          >Apartamentos turísticos</a
+        >
+        <a class="mobile-link" href="/sectores/hostales/">Hostales</a>
+        <a class="mobile-link" href="/sectores/casas-rurales/">Casas rurales</a>
+        <a class="mobile-link" href="/sectores/oficinas-turismo/"
+          >Oficinas de turismo</a
+        >
+        <a class="mobile-link" href="/sectores/guias-turisticos/"
+          >Guías turísticos</a
+        >
+        <a class="mobile-link" href="/sectores/museos/">Museos</a>
+      </div>
+
+      <!-- SUBPANEL SALUD Y BIENESTAR -->
+      <div class="mobile-panel panel-sec-salud">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Salud y bienestar</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/clinicas-dentales/"
+          >Clínicas dentales</a
+        >
+        <a class="mobile-link" href="/sectores/centros-medicos/"
+          >Centros médicos</a
+        >
+        <a class="mobile-link" href="/sectores/fisioterapia/">Fisioterapia</a>
+        <a class="mobile-link" href="/sectores/gimnasios/">Gimnasios</a>
+        <a class="mobile-link" href="/sectores/psicologos/">Psicólogos</a>
+        <a class="mobile-link" href="/sectores/nutricionistas/"
+          >Nutricionistas</a
+        >
+        <a class="mobile-link" href="/sectores/opticas/">Ópticas</a>
+        <a class="mobile-link" href="/sectores/farmacias/">Farmacias</a>
+        <a class="mobile-link" href="/sectores/veterinarias/">Veterinarias</a>
+      </div>
+
+      <!-- SUBPANEL BELLEZA -->
+      <div class="mobile-panel panel-sec-belleza">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Belleza</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/peluquerias/">Peluquerías</a>
+        <a class="mobile-link" href="/sectores/barberias/">Barberías</a>
+        <a class="mobile-link" href="/sectores/centros-estetica/"
+          >Centros de estética</a
+        >
+        <a class="mobile-link" href="/sectores/salones-de-unas/"
+          >Salones de uñas</a
+        >
+        <a class="mobile-link" href="/sectores/spas/">Spas</a>
+      </div>
+
+      <!-- SUBPANEL EDUCACIÓN Y FORMACIÓN -->
+      <div class="mobile-panel panel-sec-educacion">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Educación y formación</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/academias/">Academias</a>
+        <a class="mobile-link" href="/sectores/cursos-online/">Cursos online</a>
+        <a class="mobile-link" href="/sectores/escuelas/">Escuelas</a>
+        <a class="mobile-link" href="/sectores/universidades/">Universidades</a>
+        <a class="mobile-link" href="/sectores/autoescuelas/">Autoescuelas</a>
+      </div>
+
+      <!-- SUBPANEL COMERCIO -->
+      <div class="mobile-panel panel-sec-comercio">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Comercio</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/tiendas/">Tiendas</a>
+        <a class="mobile-link" href="/sectores/supermercados/">Supermercados</a>
+        <a class="mobile-link" href="/sectores/tiendas-ropa/"
+          >Tiendas de ropa</a
+        >
+        <a class="mobile-link" href="/sectores/floristerias/">Floristerías</a>
+      </div>
+
+      <!-- SUBPANEL SERVICIOS PROFESIONALES -->
+      <div class="mobile-panel panel-sec-servicios">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Servicios profesionales</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/inmobiliarias/">Inmobiliarias</a>
+        <a class="mobile-link" href="/sectores/abogados/">Abogados</a>
+        <a class="mobile-link" href="/sectores/asesorias/">Asesorías</a>
+        <a class="mobile-link" href="/sectores/gestorias/">Gestorías</a>
+        <a class="mobile-link" href="/sectores/notarias/">Notarías</a>
+        <a class="mobile-link" href="/sectores/fabricas/">Fábricas</a>
+      </div>
+
+      <!-- SUBPANEL EVENTOS -->
+      <div class="mobile-panel panel-sec-eventos">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Eventos</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/bodas/">Bodas</a>
+        <a class="mobile-link" href="/sectores/festivales/">Festivales</a>
+        <a class="mobile-link" href="/sectores/conciertos/">Conciertos</a>
+        <a class="mobile-link" href="/sectores/organizadores-eventos/"
+          >Organizadores de eventos</a
+        >
+      </div>
+
+      <!-- SUBPANEL AUTOMOCIÓN -->
+      <div class="mobile-panel panel-sec-automocion">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Automoción</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/talleres/">Talleres</a>
+        <a class="mobile-link" href="/sectores/concesionarios/"
+          >Concesionarios</a
+        >
+        <a class="mobile-link" href="/sectores/alquiler-coches/"
+          >Alquiler de coches</a
+        >
+        <a class="mobile-link" href="/sectores/gasolineras/">Gasolineras</a>
+      </div>
+
+      <!-- SUBPANEL TRANSPORTE -->
+      <div class="mobile-panel panel-sec-transporte">
+        <div class="mobile-header">
+          <button class="back" type="button" data-back="panel-sectores">
+            ←
+          </button>
+          <span>Transporte</span>
+        </div>
+
+        <a class="mobile-link" href="/sectores/aeropuertos/">Aeropuertos</a>
+        <a class="mobile-link" href="/sectores/autobuses/">Autobuses</a>
+        <a class="mobile-link" href="/sectores/estaciones-tren/"
+          >Estaciones de tren</a
+        >
+        <a class="mobile-link" href="/sectores/parkings/">Parkings</a>
+      </div>
+    </div>
+
+    <script src="/assets/js/mobile-menu.js"></script>
+  </body>
 </html>
