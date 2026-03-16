@@ -462,18 +462,61 @@ main.legal-page section.info p {
 }
 
 /* =======================================================
-   RESPONSIVE
+   RESPONSIVE MOVIL ARREGLADO
 ======================================================= */
 
 @media (max-width: 768px) {
 
+  /* TITULOS */
+
   h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
-  .container {
-    padding: 50px 20px;
+  h2 {
+    font-size: 22px;
   }
+
+  /* CONTAINER */
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  /* HEADER */
+
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+    font-size: 15px;
+  }
+
+  /* DROPDOWN MOVIL */
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 6px 0;
+  }
+
+  .submenu-items {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding-left: 12px;
+  }
+
+  /* GENERADOR */
 
   .tool-box {
     flex-direction: column;
@@ -483,9 +526,19 @@ main.legal-page section.info p {
     width: 100%;
   }
 
-  .header-inner {
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
+  /* CARDS */
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
+
+  .card {
+    padding: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
 }
