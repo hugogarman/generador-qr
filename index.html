@@ -507,57 +507,55 @@
 <!-- MOBILE MENU -->
 <div id="mobile-menu" class="mobile-menu">
 
+  <!-- PANEL PRINCIPAL -->
   <div class="mobile-panel panel-main active">
-
     <div class="mobile-header">
       <span>Menú</span>
-      <button class="close-menu">✕</button>
+      <button class="close-menu" type="button">✕</button>
     </div>
 
-    <a class="mobile-link has-next" data-target="panel-generadores">Generadores</a>
-    <a class="mobile-link has-next" data-target="panel-sectores">Sectores</a>
-    <a class="mobile-link" href="/contacto/">Contacto</a>
+    <button class="mobile-link has-next" type="button" data-target="panel-generadores">
+      Generadores
+    </button>
 
+    <button class="mobile-link has-next" type="button" data-target="panel-sectores">
+      Sectores
+    </button>
+
+    <a class="mobile-link" href="/contacto/">Contacto</a>
+  </div>
+
+  <!-- PANEL GENERADORES -->
+  <div class="mobile-panel panel-generadores">
+    <div class="mobile-header">
+      <button class="back" type="button" data-back="panel-main">←</button>
+      <span>Generadores</span>
+    </div>
+
+    <a class="mobile-link" href="/generador/">Ver todos los generadores</a>
+    <a class="mobile-link" href="/generador/qr-whatsapp/">QR WhatsApp</a>
+    <a class="mobile-link" href="/generador/qr-wifi/">QR WiFi</a>
+    <a class="mobile-link" href="/generador/qr-google-reviews/">QR Google Reviews</a>
+    <a class="mobile-link" href="/generador/qr-instagram/">QR Instagram</a>
+    <a class="mobile-link" href="/generador/qr-enlace/">QR Enlace</a>
+  </div>
+
+  <!-- PANEL SECTORES -->
+  <div class="mobile-panel panel-sectores">
+    <div class="mobile-header">
+      <button class="back" type="button" data-back="panel-main">←</button>
+      <span>Sectores</span>
+    </div>
+
+    <a class="mobile-link" href="/sectores/">Ver todos los sectores</a>
+    <a class="mobile-link" href="/sectores/restaurantes/">Restaurantes</a>
+    <a class="mobile-link" href="/sectores/hoteles/">Hoteles</a>
+    <a class="mobile-link" href="/sectores/clinicas-dentales/">Clínicas dentales</a>
+    <a class="mobile-link" href="/sectores/gimnasios/">Gimnasios</a>
+    <a class="mobile-link" href="/sectores/peluquerias/">Peluquerías</a>
   </div>
 
 </div>
-
-<!-- PANEL GENERADORES -->
-
-<div class="mobile-panel panel-generadores">
-
-	<div class="mobile-header">
-		<button class="back" data-back="panel-main">←</button>
-		<span>Generadores</span>
-	</div>
-	
-	<a class="mobile-link">Más populares</a>
-	<a class="mobile-link">Redes sociales</a>
-	<a class="mobile-link">Contacto</a>
-	<a class="mobile-link">Negocio y marketing</a>
-	<a class="mobile-link">Mapas</a>
-	<a class="mobile-link">Archivos</a>
-	<a class="mobile-link">Eventos</a>
-	<a class="mobile-link">Apps</a>
-
-</div>	
-
-<!-- PANEL SECTORES -->
-
-<div class="mobile-panel panel-sectores">
-
-	<div class="mobile-header">
-		<button class="back" data-back="panel-main">←</button>
-		<span>Sectores</span>
-	</div>
-
-	<a href="/sectores/restaurantes/">Restaurantes</a>
-	<a href="/sectores/hoteles/">Hoteles</a>
-	<a href="/sectores/clinicas-dentales/">Clínicas dentales</a>
-	<a href="/sectores/gimnasios/">Gimnasios</a>
-	<a href="/sectores/peluquerias/">Peluquerías</a>
-
-</div>	
 
 <script src="/assets/js/mobile-menu.js"></script>
 	
