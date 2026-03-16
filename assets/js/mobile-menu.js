@@ -2,46 +2,39 @@ const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const close = document.querySelector(".close-menu");
 
-toggle.onclick = () => {
-menu.classList.add("open");
-};
+if (toggle && menu && close) {
+  function goToPanel(panelClass) {
+    document.querySelectorAll(".mobile-panel").forEach(panel => {
+      panel.classList.remove("active");
+    });
 
-close.onclick = () => {
-menu.classList.remove("open");
-};
+    const targetPanel = document.querySelector("." + panelClass);
+    if (targetPanel) {
+      targetPanel.classList.add("active");
+    }
+  }
 
-/* abrir panel */
+  toggle.addEventListener("click", () => {
+    menu.classList.add("open");
+    goToPanel("panel-main");
+  });
 
-document.querySelectorAll(".has-next").forEach(link => {
+  close.addEventListener("click", () => {
+    menu.classList.remove("open");
+    goToPanel("panel-main");
+  });
 
-link.onclick = () => {
+  document.querySelectorAll(".has-next").forEach(link => {
+    link.addEventListener("click", () => {
+      const target = link.dataset.target;
+      goToPanel(target);
+    });
+  });
 
-const target = link.dataset.target;
-
-document.querySelectorAll(".mobile-panel").forEach(panel=>{
-panel.classList.remove("active");
-});
-
-document.querySelector("."+target).classList.add("active");
-
-};
-
-});
-
-/* volver atrás */
-
-document.querySelectorAll(".back").forEach(btn=>{
-
-btn.onclick = () => {
-
-const back = btn.dataset.back;
-
-document.querySelectorAll(".mobile-panel").forEach(panel=>{
-panel.classList.remove("active");
-});
-
-document.querySelector("."+back).classList.add("active");
-
-};
-
-});
+  document.querySelectorAll(".back").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const back = btn.dataset.back;
+      goToPanel(back);
+    });
+  });
+}
