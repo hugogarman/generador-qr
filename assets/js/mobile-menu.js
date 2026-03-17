@@ -1,10 +1,12 @@
-const toggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".mobile-menu");
-const close = document.querySelector(".close-menu");
+function initMobileMenu() {
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".mobile-menu");
+  const close = document.querySelector(".close-menu");
 
-if (toggle && menu && close) {
+  if (!toggle || !menu || !close) return;
+
   function goToPanel(panelClass) {
-    document.querySelectorAll(".mobile-panel").forEach(panel => {
+    document.querySelectorAll(".mobile-panel").forEach((panel) => {
       panel.classList.remove("active");
     });
 
@@ -24,14 +26,14 @@ if (toggle && menu && close) {
     goToPanel("panel-main");
   });
 
-  document.querySelectorAll(".has-next").forEach(link => {
+  document.querySelectorAll(".has-next").forEach((link) => {
     link.addEventListener("click", () => {
       const target = link.dataset.target;
       goToPanel(target);
     });
   });
 
-  document.querySelectorAll(".back").forEach(btn => {
+  document.querySelectorAll(".back").forEach((btn) => {
     btn.addEventListener("click", () => {
       const back = btn.dataset.back;
       goToPanel(back);
