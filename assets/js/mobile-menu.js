@@ -40,3 +40,5 @@ function initMobileMenu() {
     });
   });
 }
+
+initMobileMenu();
