@@ -30,7 +30,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
@@ -72,13 +72,13 @@ h1 {
 
 h2 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 18px;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
@@ -86,10 +86,12 @@ h1,
 h2,
 h3 {
   color: #334155;
+  letter-spacing: -0.3px;
 }
 
 p {
   font-size: 16px;
+  font-weight: 400;
   color: var(--color-text-light);
   margin-bottom: 14px;
   line-height: 1.75;
