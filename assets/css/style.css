@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
 
 /* =======================================================
    VARIABLES
@@ -12,7 +13,7 @@
   --color-bg: #f8fafc;
   --color-white: #ffffff;
   --color-text: #0f172a;
-  --color-text-light: #64748b;
+  --color-text-light: #475569;
   --color-border: #e2e8f0;
 
   --radius: 14px;
@@ -65,7 +66,7 @@ a:hover {
 
 h1 {
   font-size: 34px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 16px;
 }
 
@@ -91,6 +92,7 @@ p {
   font-size: 16px;
   color: var(--color-text-light);
   margin-bottom: 14px;
+  line-height: 1.75;
 }
 
 .subtitle {
@@ -317,7 +319,15 @@ p {
 }
 
 .hero h1 {
-  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -350,13 +360,23 @@ input {
 
   background: white;
 
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+input:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
+  border-color: rgba(124, 58, 237, 0.3);
 }
 
 input:focus {
   outline: none;
-  border-color: var(--color-primary);
 
+  transform: translateY(-1px);
+
+  border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
@@ -525,43 +545,77 @@ section {
   color: var(--color-primary);
 }
 
+/* =======================================================
+   PÁGINAS LEGALES (UNIFICADAS CON LA WEB)
+======================================================= */
+
 /* CONTENEDOR */
 
 main.legal-page {
-  max-width: 820px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
+
+  font-size: 15px;
 }
 
 /* HERO */
 
 main.legal-page .hero {
-  padding: 30px 20px 10px;
+  margin-bottom: 40px;
 }
 
 /* SECCIONES */
 
 main.legal-page section.info {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-main.legal-page section.info:first-of-type {
-  margin-top: 6px;
+main.legal-page section {
+  margin-bottom: 40px;
 }
 
 /* TITULOS */
 
-main.legal-page section.info h2 {
-  font-size: 19px;
-  margin-top: 10px;
-  margin-bottom: 4px;
+main.legal-page h1,
+main.legal-page h2,
+main.legal-page h3 {
+  color: #334155;
+  font-family: "Inter", sans-serif;
+}
+
+main.legal-page h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+main.legal-page h3 {
+  font-size: 16px;
+  margin-top: 14px;
+  margin-bottom: 6px;
 }
 
 /* TEXTO */
 
-main.legal-page section.info p {
-  font-size: 16px;
+main.legal-page p {
+  font-size: 15px;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+/* LISTAS */
+
+main.legal-page ul,
+main.legal-page ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+main.legal-page li {
   margin-bottom: 6px;
-  line-height: 1.6;
+  color: var(--color-text-light);
 }
 
 /* =======================================================
