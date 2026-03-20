@@ -357,6 +357,39 @@ p {
   margin-bottom: 70px;
 }
 
+/* =======================================================
+   RESULTADO QR
+======================================================= */
+
+#qr-result {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#qr-result img,
+#qr-result canvas {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.2s ease;
+}
+
+#qr-result img:hover,
+#qr-result canvas:hover {
+  transform: scale(1.02);
+}
+
+#qr-result button {
+  margin-top: 10px;
+}
+
 .tool-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
