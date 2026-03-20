@@ -372,6 +372,8 @@ input {
   border: 1px solid var(--color-border);
 
   font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   color: var(--color-text);
 
   background: white;
@@ -398,6 +400,7 @@ input:focus {
 
 input::placeholder {
   font-family: "Inter", sans-serif;
+  font-weight: 400;
   color: #94a3b8;
 }
 
@@ -414,7 +417,8 @@ button,
   );
 
   color: white;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   letter-spacing: 0.2px;
   font-size: 16px;
 
