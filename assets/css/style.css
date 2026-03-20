@@ -492,11 +492,6 @@ section {
   border-color: rgba(124, 58, 237, 0.3);
 }
 
-.card:hover h3,
-.card:hover p {
-  opacity: 0.95;
-}
-
 .card::before {
   content: "";
   position: absolute;
@@ -508,8 +503,6 @@ section {
     var(--color-accent)
   );
 
-  mix-blend-mode: overlay;
-
   opacity: 0;
   transition: opacity 0.3s ease;
 
@@ -517,7 +510,7 @@ section {
 }
 
 .card:hover::before {
-  opacity: 0.04;
+  opacity: 0.08;
 }
 
 .card p {
