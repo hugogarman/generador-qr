@@ -358,10 +358,31 @@ p {
 }
 
 .tool-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.tool-box input {
+  width: 100%;
+  min-width: 0;
+}
+
+.tool-box button {
+  white-space: nowrap;
+}
+
+.input-group {
   display: flex;
-  gap: 12px;
-  max-width: 650px;
-  margin: 25px auto 0 auto;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #94a3b8;
+  font-weight: 400;
 }
 
 input {

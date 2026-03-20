@@ -300,9 +300,15 @@
             placeholder="Ubicación del evento"
           />
 
-          <input type="datetime-local" id="event-start" />
+          <div class="input-group">
+            <label>Inicio</label>
+            <input type="datetime-local" id="event-start" />
+          </div>
 
-          <input type="datetime-local" id="event-end" />
+          <div class="input-group">
+            <label>Fin</label>
+            <input type="datetime-local" id="event-end" />
+          </div>
 
           <button class="primary-btn" onclick="generateEventQR()">
             Generar QR Evento
