@@ -605,6 +605,7 @@ button.mobile-link:hover {
 
   .menu-toggle {
     display: block;
+    font-size: 32px;
   }
 
   h1 {
@@ -623,6 +624,7 @@ button.mobile-link:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 16px;
   }
 
   .logo img {
