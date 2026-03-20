@@ -39,6 +39,11 @@ function initMobileMenu() {
       goToPanel(back);
     });
   });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', function () {
+    this.blur();
+  });
+});
 }
 
 initMobileMenu();
