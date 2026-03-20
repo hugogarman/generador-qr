@@ -80,8 +80,9 @@ h3 {
 }
 
 h1,
-h2 {
-  color: #1e293b;
+h2,
+h3 {
+  color: #334155;
 }
 
 p {
@@ -391,16 +392,51 @@ section {
 
 .card {
   background: var(--color-white);
-  padding: 18px; /* reducido */
+  padding: 18px;
   border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
+
   border: 1px solid var(--color-border);
-  transition: 0.25s ease;
+
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card * {
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-medium);
+  cursor: pointer;
+  transform: translateY(-6px);
+
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    120deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 0.08;
 }
 
 .card p {
@@ -416,6 +452,11 @@ section {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card:hover h3 {
+  transform: translateX(2px);
+  transition: transform 0.2s ease;
 }
 
 /* =======================================================
