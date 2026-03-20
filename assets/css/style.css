@@ -62,13 +62,13 @@ a:hover {
 ======================================================= */
 
 h1 {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 800;
   margin-bottom: 16px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -77,6 +77,12 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1e293b;
 }
 
 p {
@@ -126,7 +132,7 @@ p {
 /* LOGO */
 
 .logo img {
-  height: 80px;
+  height: 100px;
   width: auto;
   display: block;
 }
@@ -609,11 +615,11 @@ button.mobile-link:hover {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .container {
@@ -628,7 +634,7 @@ button.mobile-link:hover {
   }
 
   .logo img {
-    height: 60px;
+    height: 72px;
   }
 
   .tool-box {
