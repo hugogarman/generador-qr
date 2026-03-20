@@ -769,6 +769,13 @@ main.legal-page li {
   font-weight: 500;
   text-align: left;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-link:focus,
+.mobile-link:active {
+  outline: none;
+  background: transparent;
 }
 
 .mobile-link,
@@ -778,8 +785,10 @@ main.legal-page li {
   color: white;
 }
 
-.mobile-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+@media (hover: hover) {
+  .mobile-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
 
 button.mobile-link {
