@@ -761,21 +761,26 @@ main.legal-page li {
   align-items: center;
   justify-content: space-between;
   padding: 14px 0;
+
   color: white;
   text-decoration: none;
-  color: #222;
   background: transparent;
+
   font-size: 16px;
   font-weight: 500;
   text-align: left;
   cursor: pointer;
+
   -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.2s ease;
 }
 
 .mobile-link:focus,
-.mobile-link:active {
-  outline: none;
+.mobile-link:active,
+.mobile-link:visited {
+  color: white;
   background: transparent;
+  outline: none;
 }
 
 .mobile-link,
