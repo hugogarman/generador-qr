@@ -80,8 +80,7 @@ h3 {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: #1e293b;
 }
 
@@ -407,6 +406,16 @@ section {
 .card p {
   font-size: 14px;
   color: var(--color-text-light);
+}
+
+.card h3 {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* =======================================================
