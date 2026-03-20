@@ -88,13 +88,13 @@ h1 {
 
 h2 {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 18px;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
@@ -102,7 +102,6 @@ h3 {
 
 p {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
   font-size: 15.5px;
   line-height: 1.8;
   letter-spacing: 0.1px;
