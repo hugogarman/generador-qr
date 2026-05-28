@@ -368,64 +368,18 @@ p {
   align-items: center;
 }
 
-/* Phone mockup */
+/* Hero phone image */
 
 @keyframes phone-float {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-10px); }
 }
 
-.phone-mockup {
-  width: 190px;
-  height: 340px;
-  background: #0f0f1a;
-  border: 2px solid #2a2a4a;
-  border-radius: 34px;
-  padding: 0 14px 18px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+.hero-phone-img {
+  width: 260px;
+  height: auto;
   animation: phone-float 4s ease-in-out infinite;
-  box-shadow:
-    0 0 0 1px rgba(99, 102, 241, 0.12),
-    0 24px 60px rgba(99, 102, 241, 0.2),
-    0 8px 24px rgba(0, 0, 0, 0.5);
-}
-
-.phone-notch {
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 54px;
-  height: 6px;
-  background: #2a2a4a;
-  border-radius: 3px;
-}
-
-.phone-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 16px;
-}
-
-.qr-svg {
-  width: 144px;
-  height: 144px;
-  border-radius: 6px;
-  filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.2));
-}
-
-.phone-domain {
-  font-size: 10px;
-  color: var(--color-text-light);
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0.4px;
+  filter: drop-shadow(0 24px 48px rgba(99, 102, 241, 0.25));
 }
 
 /* =======================================================
@@ -646,6 +600,22 @@ section {
 
 .card:hover::before {
   opacity: 0.06;
+}
+
+.card-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon img,
+.card-icon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
 }
 
 .card p {
