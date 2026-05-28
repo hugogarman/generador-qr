@@ -362,7 +362,7 @@ p {
 }
 
 .hero-visual {
-  flex: 0 0 420px;
+  flex: 0 0 560px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,12 +376,12 @@ p {
 }
 
 .hero-phone-img {
-  width: 400px;
+  width: 520px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
   animation: phone-float 4s ease-in-out infinite;
-  filter: drop-shadow(0 24px 48px rgba(99, 102, 241, 0.25));
+  filter: drop-shadow(0 32px 64px rgba(99, 102, 241, 0.3));
 }
 
 /* =======================================================
@@ -458,6 +458,70 @@ p {
   color: var(--color-text-light);
   margin: 0;
   line-height: 1.6;
+}
+
+/* =======================================================
+   BANDA DE ESTADÍSTICAS
+======================================================= */
+
+.stats-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 40px 48px;
+  margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(99, 102, 241, 0.04) 0%,
+    rgba(59, 130, 246, 0.04) 100%);
+  pointer-events: none;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-value {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 52px;
+  background: var(--color-border);
+  flex-shrink: 0;
 }
 
 /* =======================================================
@@ -978,6 +1042,21 @@ button.mobile-link:hover {
   .steps {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .stats-band {
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 28px;
+  }
+
+  .stat-divider {
+    width: 40px;
+    height: 1px;
+  }
+
+  .stat-value {
+    font-size: 36px;
   }
 
   .hero-split {
