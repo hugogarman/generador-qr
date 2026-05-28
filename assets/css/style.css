@@ -362,7 +362,7 @@ p {
 }
 
 .hero-visual {
-  flex: 0 0 220px;
+  flex: 0 0 420px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,6 +382,102 @@ p {
   object-fit: contain;
   animation: phone-float 4s ease-in-out infinite;
   filter: drop-shadow(0 24px 48px rgba(99, 102, 241, 0.25));
+}
+
+/* =======================================================
+   CÓMO FUNCIONA
+======================================================= */
+
+.how-it-works {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.how-it-works h2 {
+  margin-bottom: 10px;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.step {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 36px 24px 28px;
+  flex: 1;
+  max-width: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.step-number {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.step-icon {
+  width: 58px;
+  height: 58px;
+  background: rgba(99, 102, 241, 0.08);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+  -webkit-text-fill-color: var(--color-white);
+  background: none;
+  margin-bottom: 0;
+}
+
+.step p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.step-arrow {
+  font-size: 22px;
+  color: var(--color-primary);
+  opacity: 0.45;
+  flex-shrink: 0;
 }
 
 /* =======================================================
@@ -897,6 +993,20 @@ button.mobile-link:hover {
 
   .container {
     padding: 40px 20px;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  .step {
+    max-width: 100%;
+  }
+
+  .step-arrow {
+    display: none;
   }
 
   .hero-split {
