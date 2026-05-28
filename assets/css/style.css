@@ -362,7 +362,7 @@ p {
 }
 
 .hero-visual {
-  flex: 0 0 560px;
+  flex: 0 0 720px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +376,7 @@ p {
 }
 
 .hero-phone-img {
-  width: 520px;
+  width: 700px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -389,7 +389,7 @@ p {
 ======================================================= */
 
 .how-it-works {
-  text-align: center;
+  text-align: left;
   margin-bottom: 80px;
 }
 
@@ -513,8 +513,7 @@ p {
   font-size: 13px;
   font-weight: 500;
   color: var(--color-text-light);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .stat-divider {
