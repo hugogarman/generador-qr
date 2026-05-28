@@ -113,6 +113,11 @@ p {
   margin: 0 auto;
 }
 
+.how-it-works .subtitle {
+  margin: 0;
+  text-align: left;
+}
+
 ::selection {
   background: rgba(99, 102, 241, 0.3);
 }
@@ -147,7 +152,7 @@ p {
 /* LOGO */
 
 .logo img {
-  height: 100px;
+  height: 140px;
   width: auto;
   display: block;
 }
@@ -362,7 +367,7 @@ p {
 }
 
 .hero-visual {
-  flex: 0 0 720px;
+  flex: 0 0 580px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +381,7 @@ p {
 }
 
 .hero-phone-img {
-  width: 700px;
+  width: 550px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -411,10 +416,18 @@ p {
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 14px;
+  align-items: flex-start;
+  text-align: left;
+  gap: 12px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .step:hover {
@@ -510,7 +523,7 @@ p {
 }
 
 .stat-label {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--color-text-light);
   letter-spacing: 0.5px;
